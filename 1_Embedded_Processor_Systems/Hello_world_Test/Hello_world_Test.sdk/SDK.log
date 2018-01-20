@@ -1,0 +1,135 @@
+14:51:30 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:51:32 INFO  : XSDB server has started successfully.
+14:51:34 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper.hdf.
+14:55:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:56:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:57:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:57:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+14:57:11 INFO  : FPGA configured successfully with bitstream "C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/download.bit"
+15:07:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+15:07:54 INFO  : 'fpga -state' command is executed.
+15:07:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:55 INFO  : Context for processor 'microblaze_0' is selected.
+15:07:55 INFO  : Hardware design information is loaded from 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf'.
+15:07:55 INFO  : Context for processor 'microblaze_0' is selected.
+15:07:56 INFO  : System reset is completed.
+15:07:59 INFO  : Context for processor 'microblaze_0' is selected.
+15:07:59 INFO  : The application 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf' is downloaded to processor 'microblaze_0'.
+15:07:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf
+----------------End of Script----------------
+
+15:07:59 INFO  : Memory regions updated for context MicroBlaze #0
+15:08:18 INFO  : Disconnected from the channel tcfchan#1.
+15:08:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+15:08:18 INFO  : 'fpga -state' command is executed.
+15:08:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:19 INFO  : Context for processor 'microblaze_0' is selected.
+15:08:19 INFO  : Hardware design information is loaded from 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf'.
+15:08:19 INFO  : Context for processor 'microblaze_0' is selected.
+15:08:19 INFO  : System reset is completed.
+15:08:22 INFO  : Context for processor 'microblaze_0' is selected.
+15:08:23 INFO  : The application 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf' is downloaded to processor 'microblaze_0'.
+15:08:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf
+----------------End of Script----------------
+
+15:08:23 INFO  : Memory regions updated for context MicroBlaze #0
+15:08:42 INFO  : Disconnected from the channel tcfchan#2.
+15:08:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+15:08:43 INFO  : 'fpga -state' command is executed.
+15:08:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:43 INFO  : Context for processor 'microblaze_0' is selected.
+15:08:43 INFO  : Hardware design information is loaded from 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf'.
+15:08:44 INFO  : Context for processor 'microblaze_0' is selected.
+15:08:44 INFO  : System reset is completed.
+15:08:47 INFO  : Context for processor 'microblaze_0' is selected.
+15:08:47 INFO  : The application 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf' is downloaded to processor 'microblaze_0'.
+15:08:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf
+----------------End of Script----------------
+
+15:08:47 INFO  : Memory regions updated for context MicroBlaze #0
+15:09:07 INFO  : Disconnected from the channel tcfchan#3.
+15:09:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+15:09:08 INFO  : 'fpga -state' command is executed.
+15:09:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:08 INFO  : Context for processor 'microblaze_0' is selected.
+15:09:08 INFO  : Hardware design information is loaded from 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf'.
+15:09:08 INFO  : Context for processor 'microblaze_0' is selected.
+15:09:09 INFO  : System reset is completed.
+15:09:12 INFO  : Context for processor 'microblaze_0' is selected.
+15:09:12 INFO  : The application 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf' is downloaded to processor 'microblaze_0'.
+15:09:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf
+----------------End of Script----------------
+
+15:09:12 INFO  : Memory regions updated for context MicroBlaze #0
+15:09:25 INFO  : Disconnected from the channel tcfchan#4.
+15:09:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+15:09:26 INFO  : 'fpga -state' command is executed.
+15:09:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:26 INFO  : Context for processor 'microblaze_0' is selected.
+15:09:27 INFO  : Hardware design information is loaded from 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf'.
+15:09:27 INFO  : Context for processor 'microblaze_0' is selected.
+15:09:27 INFO  : System reset is completed.
+15:09:30 INFO  : Context for processor 'microblaze_0' is selected.
+15:09:30 INFO  : The application 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf' is downloaded to processor 'microblaze_0'.
+15:09:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf
+----------------End of Script----------------
+
+15:09:30 INFO  : Memory regions updated for context MicroBlaze #0
+15:12:02 INFO  : Disconnected from the channel tcfchan#5.
+15:12:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+15:12:02 INFO  : 'fpga -state' command is executed.
+15:12:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:12:03 INFO  : Hardware design information is loaded from 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf'.
+15:12:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:12:03 INFO  : System reset is completed.
+15:12:07 INFO  : Context for processor 'microblaze_0' is selected.
+15:12:07 INFO  : The application 'C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf' is downloaded to processor 'microblaze_0'.
+15:12:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow C:/Users/labuser/Desktop/3700/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_test/Debug/ublaze_test.elf
+----------------End of Script----------------
+
+15:12:07 INFO  : Memory regions updated for context MicroBlaze #0
+15:13:23 INFO  : Disconnected from the channel tcfchan#6.
