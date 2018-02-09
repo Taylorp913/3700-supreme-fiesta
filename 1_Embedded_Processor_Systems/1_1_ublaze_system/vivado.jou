@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Jan 31 16:04:42 2018
+# Process ID: 18144
+# Current directory: C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27676 C:\Users\Taylor\Documents\ECE_3700\3700-supreme-fiesta\1_Embedded_Processor_Systems\1_1_ublaze_system\1_1_ublaze_system.xpr
+# Log file: C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/vivado.log
+# Journal file: C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.xpr
+launch_sdk -workspace C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper.hdf

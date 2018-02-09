@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Jan 29 15:19:18 2018
+# Process ID: 31648
+# Current directory: C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31868 C:\Users\Taylor\Documents\ECE_3700\Vivado\Lab1\1_2_axi_logic_interface\1_2_ublaze_system.xpr
+# Log file: C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/vivado.log
+# Journal file: C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.xpr
+INFO: [Project 1-313] Project file moved from '/home/tayspen72/Documents/Vivado/Lab1/1_2_axi_logic_interface' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:01:21 ; elapsed = 00:00:46 . Memory (MB): peak = 940.676 ; gain = 328.160
+launch_sdk -workspace C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 31 16:04:21 2018...

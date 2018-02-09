@@ -1,0 +1,76 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Wed Jan 31 16:26:00 2018
+| Host         : DESKTOP-RQADDVB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ublaze_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of ublaze_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0 (Rev. 10)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Fri Jan 12 15:47:35 2018
+| Host         : tsp-arch-ux305c running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ublaze_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of ublaze_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0 (Rev. 10)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Warnings
+-----------
+
+WARNING: The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+
+3. Customization warnings
+-------------------------
+
+WARNING: Value 'usb_uart' is out of the range for parameter 'UARTLITE BOARD INTERFACE(UARTLITE_BOARD_INTERFACE)' for BD Cell '/axi_uartlite_0' . Valid values are - Custom
+
+WARNING: Customization errors found on '/axi_uartlite_0'. Restoring to previous valid configuration.
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_uartlite:2.0 -user_name ublaze_axi_uartlite_0_0
+set_property -dict "\
+  CONFIG.C_BAUDRATE 9600 \
+  CONFIG.C_DATA_BITS 8 \
+  CONFIG.C_ODD_PARITY 0 \
+  CONFIG.C_S_AXI_ACLK_FREQ_HZ 100000000 \
+  CONFIG.C_S_AXI_ACLK_FREQ_HZ_d 100.0 \
+  CONFIG.C_USE_PARITY 0 \
+  CONFIG.Component_Name ublaze_axi_uartlite_0_0 \
+  CONFIG.PARITY No_Parity \
+  CONFIG.UARTLITE_BOARD_INTERFACE usb_uart \
+  CONFIG.USE_BOARD_FLOW true " [get_ips ublaze_axi_uartlite_0_0]
+
+

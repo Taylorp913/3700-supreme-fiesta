@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Jan 13 22:34:01 2018
+# Process ID: 23432
+# Current directory: /home/tayspen72/Documents/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.runs/impl_1
+# Command line: vivado -log ublaze_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source ublaze_wrapper.tcl -notrace
+# Log file: /home/tayspen72/Documents/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.runs/impl_1/ublaze_wrapper.vdi
+# Journal file: /home/tayspen72/Documents/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source ublaze_wrapper.tcl -notrace

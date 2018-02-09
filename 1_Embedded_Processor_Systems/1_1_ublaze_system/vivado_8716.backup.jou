@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Jan 23 21:57:36 2018
+# Process ID: 8716
+# Current directory: C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6332 C:\Users\Taylor\Documents\ECE_3700\3700-supreme-fiesta\1_Embedded_Processor_Systems\1_1_ublaze_system\1_1_ublaze_system.xpr
+# Log file: C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/vivado.log
+# Journal file: C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.xpr
+open_bd_design {C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.srcs/sources_1/bd/ublaze/ublaze.bd}
+startgroup
+set_property -dict [list CONFIG.GPIO_BOARD_INTERFACE {Custom} CONFIG.GPIO2_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_0]
+endgroup
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_bd_design {C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.srcs/sources_1/bd/ublaze/ublaze.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file copy -force C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.runs/impl_1/ublaze_wrapper.sysdef C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.sdk/ublaze_wrapper.hdf
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+open_bd_design {C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_1_ublaze_system/1_1_ublaze_system.srcs/sources_1/bd/ublaze/ublaze.bd}
+validate_bd_design -force
+save_bd_design
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1

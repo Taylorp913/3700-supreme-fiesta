@@ -1,0 +1,78 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Wed Jan 31 16:26:07 2018
+| Host         : DESKTOP-RQADDVB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ublaze_rst_clk_wiz_1_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of ublaze_rst_clk_wiz_1_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Fri Jan 12 15:47:37 2018
+| Host         : tsp-arch-ux305c running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ublaze_rst_clk_wiz_1_100M_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of ublaze_rst_clk_wiz_1_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 8)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Warnings
+-----------
+
+WARNING: The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+
+3. Customization warnings
+-------------------------
+
+WARNING: Value 'reset' is out of the range for parameter 'RESET BOARD INTERFACE(RESET_BOARD_INTERFACE)' for BD Cell '/rst_clk_wiz_1_100M' . Valid values are - Custom
+
+WARNING: Customization errors found on '/rst_clk_wiz_1_100M'. Restoring to previous valid configuration.
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 -user_name ublaze_rst_clk_wiz_1_100M_0
+set_property -dict "\
+  CONFIG.C_AUX_RESET_HIGH 0 \
+  CONFIG.C_AUX_RST_WIDTH 4 \
+  CONFIG.C_EXT_RESET_HIGH 1 \
+  CONFIG.C_EXT_RST_WIDTH 4 \
+  CONFIG.C_NUM_BUS_RST 1 \
+  CONFIG.C_NUM_INTERCONNECT_ARESETN 1 \
+  CONFIG.C_NUM_PERP_ARESETN 1 \
+  CONFIG.C_NUM_PERP_RST 1 \
+  CONFIG.Component_Name ublaze_rst_clk_wiz_1_100M_0 \
+  CONFIG.RESET_BOARD_INTERFACE reset \
+  CONFIG.USE_BOARD_FLOW true \
+  CONFIG.clock.FREQ_HZ 100000000 " [get_ips ublaze_rst_clk_wiz_1_100M_0]
+
+

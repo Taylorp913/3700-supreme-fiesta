@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Jan 29 15:19:18 2018
+# Process ID: 31648
+# Current directory: C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31868 C:\Users\Taylor\Documents\ECE_3700\Vivado\Lab1\1_2_axi_logic_interface\1_2_ublaze_system.xpr
+# Log file: C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/vivado.log
+# Journal file: C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.xpr
+launch_sdk -workspace C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper.hdf
+launch_sdk -workspace C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper.hdf
+launch_sdk -workspace C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk -hwspec C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper.hdf

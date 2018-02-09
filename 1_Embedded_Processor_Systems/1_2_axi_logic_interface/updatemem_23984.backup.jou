@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# 
+# Start of session at: Wed Jan 31 15:38:10 2018
+# Process ID: 23984
+# Current directory: C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2015.4/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/ublaze_wrapper.mmi -data C:/Xilinx/SDK/2015.4/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc ublaze_i/microblaze_0 -bit C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/ublaze_wrapper.bit -out C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper_hw_platform_0/download.bit -force
+# Log file: C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/updatemem.log
+# Journal file: C:/Users/Taylor/Documents/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2015.4/scripts/updatemem/main.tcl -notrace
