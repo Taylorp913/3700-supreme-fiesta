@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Mar 14 15:46:49 2018
+# Process ID: 12872
+# Current directory: C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24620 C:\ECE_3700\Vivado\Lab2\1_2_SevenSegment\1_2_SevenSegment.xpr
+# Log file: C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment/vivado.log
+# Journal file: C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment/1_2_SevenSegment.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/Vivado/IP_REPO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:56 ; elapsed = 00:00:28 . Memory (MB): peak = 837.836 ; gain = 255.027
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Mar 14 15:48:57 2018] Launched synth_1...
+Run output will be captured here: C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment/1_2_SevenSegment.runs/synth_1/runme.log
+[Wed Mar 14 15:48:57 2018] Launched impl_1...
+Run output will be captured here: C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment/1_2_SevenSegment.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment/.Xil/Vivado-12872-DESKTOP-RQADDVB/dcp/SevenSegment_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment/1_2_SevenSegment.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment/1_2_SevenSegment.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1.xdc:56]
+get_clocks: Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 1523.500 ; gain = 476.742
+Finished Parsing XDC File [C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment/.Xil/Vivado-12872-DESKTOP-RQADDVB/dcp/SevenSegment_wrapper_early.xdc]
+Parsing XDC File [C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment/.Xil/Vivado-12872-DESKTOP-RQADDVB/dcp/SevenSegment_wrapper.xdc]
+Finished Parsing XDC File [C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment/.Xil/Vivado-12872-DESKTOP-RQADDVB/dcp/SevenSegment_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.265 . Memory (MB): peak = 1523.527 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.268 . Memory (MB): peak = 1523.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:01:38 ; elapsed = 00:01:33 . Memory (MB): peak = 1647.348 ; gain = 758.453
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 17 2015-18:01:07
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [localhost]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [localhost]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [TCP:localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [TCP:localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [TCP:localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [TCP:localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [localhost]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [localhost]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [TCP:localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 19 15:36:58 2018...

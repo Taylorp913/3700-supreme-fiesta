@@ -1,0 +1,340 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Mar 24 15:19:33 2018
+# Process ID: 56992
+# Current directory: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent63236 C:\ECE_3700\3700-supreme-fiesta\1_Embedded_Processor_Systems\1_3_Something\1_2_SevenSegment.xpr
+# Log file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something/vivado.log
+# Journal file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something/1_2_SevenSegment.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:55 ; elapsed = 00:00:33 . Memory (MB): peak = 835.113 ; gain = 242.152
+save_project_as 1_3_Axi-Periferal C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal -force
+save_project_as: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 848.738 ; gain = 0.000
+import_files
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+open_bd_design {C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/SevenSegment.bd}
+Adding component instance block -- xilinx.com:ip:clk_wiz:5.2 - clk_wiz_0
+Adding component instance block -- usu.edu:ECE3700:SevenSegmentDriver:1.0 - SevenSegmentDriver_0
+Adding component instance block -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_0
+Adding component instance block -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_1
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_1
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_2
+Adding component instance block -- xilinx.com:ip:c_addsub:12.0 - c_addsub_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_3
+Successfully read diagram <SevenSegment> from BD file <C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/SevenSegment.bd>
+open_bd_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:34 . Memory (MB): peak = 891.230 ; gain = 40.355
+make_wrapper -files [get_files C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/SevenSegment.bd] -top
+import_files -norecurse C:/ECE_3700/Vivado/Lab1/1_2_axi_logic_interface/1_2_ublaze_system.srcs/sources_1/bd/ublaze/ublaze.bd
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'ublaze.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+ublaze_clk_wiz_1_0
+ublaze_axi_uartlite_0_0
+ublaze_rst_clk_wiz_1_100M_0
+ublaze_axi_gpio_0_0
+
+WARNING: [IP_Flow 19-2162] IP 'ublaze_clk_wiz_1_0' is locked:
+* This IP has board specific outputs. Current project board 'digilentinc.com:basys3:part0:1.1' and the board 'unset' used to customize the IP 'ublaze_clk_wiz_1_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ublaze_rst_clk_wiz_1_100M_0' is locked:
+* This IP has board specific outputs. Current project board 'digilentinc.com:basys3:part0:1.1' and the board 'unset' used to customize the IP 'ublaze_rst_clk_wiz_1_100M_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ublaze_axi_uartlite_0_0' is locked:
+* This IP has board specific outputs. Current project board 'digilentinc.com:basys3:part0:1.1' and the board 'unset' used to customize the IP 'ublaze_axi_uartlite_0_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ublaze_axi_gpio_0_0' is locked:
+* This IP has board specific outputs. Current project board 'digilentinc.com:basys3:part0:1.1' and the board 'unset' used to customize the IP 'ublaze_axi_gpio_0_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+import_files: Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 987.844 ; gain = 42.598
+export_ip_user_files -of_objects  [get_files  C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/ublaze/ublaze.bd] -force -quiet
+update_compile_order -fileset sources_1
+open_bd_design {C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/ublaze/ublaze.bd}
+Adding component instance block -- xilinx.com:ip:microblaze:9.5 - microblaze_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:5.2 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.3 - lmb_bram
+Successfully read diagram <ublaze> from BD file <C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/ublaze/ublaze.bd>
+open_bd_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1082.688 ; gain = 66.168
+set_property location {3 799 287} [get_bd_cells microblaze_0]
+regenerate_bd_layout
+startgroup
+set_property location {4 1192 74} [get_bd_cells microblaze_0_local_memory]
+set_property location {3 782 64} [get_bd_cells microblaze_0]
+endgroup
+set_property location {5 1509 47} [get_bd_cells axi_timer_0]
+set_property location {5 1469 543} [get_bd_cells axi_gpio_0]
+set_property location {5 1478 250} [get_bd_cells axi_uartlite_0]
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets axi_gpio_0_gpio_io_o] [get_bd_nets sw_1] [get_bd_intf_nets microblaze_0_axi_periph_M02_AXI] [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_ports led]
+delete_bd_objs [get_bd_ports sw]
+regenerate_bd_layout
+set_property location {4 1175 595} [get_bd_cells microblaze_0_axi_periph]
+regenerate_bd_layout
+create_peripheral xilinx.com user AXI_SevenSegmentDriver 1.0 -dir C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:AXI_SevenSegmentDriver:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:AXI_SevenSegmentDriver:1.0]
+WARNING: [IP_Flow 19-627] AddressBlock Parameter 'OFFSET_BASE_PARAM': XPath expression failed: Undefined parameter "ADDRBLOCKPARAM_VALUE.S00_AXI_reg.OFFSET_BASE_PARAM" used in XPATH expression "ADDRBLOCKPARAM_VALUE.S00_AXI_reg.OFFSET_BASE_PARAM".
+WARNING: [IP_Flow 19-627] AddressBlock Parameter 'OFFSET_HIGH_PARAM': XPath expression failed: Undefined parameter "ADDRBLOCKPARAM_VALUE.S00_AXI_reg.OFFSET_HIGH_PARAM" used in XPATH expression "ADDRBLOCKPARAM_VALUE.S00_AXI_reg.OFFSET_HIGH_PARAM".
+write_peripheral [ipx::find_open_core xilinx.com:user:AXI_SevenSegmentDriver:1.0]
+set_property  ip_repo_paths  {C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0 C:/ECE_3700/3700-supreme-fiesta/IP_REPO} [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+ipx::edit_ip_in_project -upgrade true -name edit_AXI_SevenSegmentDriver_v1_0 -directory C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0/component.xml
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at C:/Xilinx/Vivado/2015.4/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at C:/Xilinx/Vivado/2015.4/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1095.453 ; gain = 5.934
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 1095.691 ; gain = 6.172
+update_compile_order -fileset sim_1
+set_property  ip_repo_paths  {c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0 c:/ECE_3700/3700-supreme-fiesta/IP_REPO C:/ECE_3700/Vivado/IP_REPO/SevenSegmentDriver} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/Vivado/IP_REPO/SevenSegmentDriver'.
+create_ip -name AXI_SevenSegmentDriver -vendor xilinx.com -library user -version 1.0 -module_name AXI_SevenSegmentDriver_0 -dir C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0/src
+generate_target {instantiation_template} [get_files c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0/src/AXI_SevenSegmentDriver_0/AXI_SevenSegmentDriver_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'AXI_SevenSegmentDriver_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0/src/AXI_SevenSegmentDriver_0/AXI_SevenSegmentDriver_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXI_SevenSegmentDriver_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'AXI_SevenSegmentDriver_0'...
+INFO: [IP_Flow 19-1686] Generating 'Software Driver' target for IP 'AXI_SevenSegmentDriver_0'...
+export_ip_user_files -of_objects [get_files c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0/src/AXI_SevenSegmentDriver_0/AXI_SevenSegmentDriver_0.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0/src/AXI_SevenSegmentDriver_0/AXI_SevenSegmentDriver_0.xci]
+launch_run -jobs 4 AXI_SevenSegmentDriver_0_synth_1
+[Sat Mar 24 16:27:42 2018] Launched AXI_SevenSegmentDriver_0_synth_1...
+Run output will be captured here: c:/ece_3700/3700-supreme-fiesta/1_embedded_processor_systems/ip_repo/edit_AXI_SevenSegmentDriver_v1_0.runs/AXI_SevenSegmentDriver_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0/src/AXI_SevenSegmentDriver_0/AXI_SevenSegmentDriver_0.xci] -directory c:/ece_3700/3700-supreme-fiesta/1_embedded_processor_systems/ip_repo/edit_AXI_SevenSegmentDriver_v1_0.ip_user_files/sim_scripts -force -quiet
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/Vivado/IP_REPO/SevenSegmentDriver'.
+report_ip_status -name ip_status
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-3836] Not packaging cyclic XCI subcore 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0/src/AXI_SevenSegmentDriver_0/AXI_SevenSegmentDriver_0.xci'.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/Vivado/IP_REPO/SevenSegmentDriver'.
+current_project 1_3_Axi-Periferal
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:AXI_SevenSegmentDriver:1.0 AXI_SevenSegmentDriver_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/microblaze_0 (Periph)" Clk "Auto" }  [get_bd_intf_pins AXI_SevenSegmentDriver_0/S00_AXI]
+</AXI_SevenSegmentDriver_0/S00_AXI/S00_AXI_reg> is being mapped into </microblaze_0/Data> at <0x44A00000 [ 64K ]>
+validate_bd_design
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* BD design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+ublaze_clk_wiz_1_0
+ublaze_axi_uartlite_0_0
+ublaze_rst_clk_wiz_1_100M_0
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+report_ip_status -name ip_status 
+set_property location {3 821 -10} [get_bd_cells AXI_SevenSegmentDriver_0]
+current_project edit_AXI_SevenSegmentDriver_v1_0
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/Vivado/IP_REPO/SevenSegmentDriver'.
+report_ip_status -name ip_status
+current_project 1_3_Axi-Periferal
+delete_bd_objs [get_bd_intf_nets microblaze_0_axi_periph_M02_AXI] [get_bd_cells AXI_SevenSegmentDriver_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:AXI_SevenSegmentDriver:1.0 AXI_SevenSegmentDriver_0
+endgroup
+delete_bd_objs [get_bd_cells AXI_SevenSegmentDriver_0]
+startgroup
+create_bd_cell -type ip -vlnv usu.edu:ECE3700:SevenSegmentDriver:1.0 SevenSegmentDriver_0
+endgroup
+delete_bd_objs [get_bd_cells SevenSegmentDriver_0]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+upgrade_ip [get_ips  {ublaze_rst_clk_wiz_1_100M_0 ublaze_clk_wiz_1_0 ublaze_axi_uartlite_0_0}]
+Upgrading 'C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/ublaze/ublaze.bd'
+INFO: [IP_Flow 19-3420] Updated ublaze_axi_uartlite_0_0 to use current project options
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/ublaze/ip/ublaze_axi_uartlite_0_0/ublaze_axi_uartlite_0_0.upgrade_log'.
+INFO: [IP_Flow 19-3420] Updated ublaze_clk_wiz_1_0 to use current project options
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/ublaze/ip/ublaze_clk_wiz_1_0/ublaze_clk_wiz_1_0.upgrade_log'.
+INFO: [IP_Flow 19-3420] Updated ublaze_rst_clk_wiz_1_100M_0 to use current project options
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/ublaze/ip/ublaze_rst_clk_wiz_1_100M_0/ublaze_rst_clk_wiz_1_100M_0.upgrade_log'.
+Wrote  : <C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/ublaze/ublaze.bd> 
+upgrade_ip: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1171.746 ; gain = 0.000
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:AXI_SevenSegmentDriver:1.0 AXI_SevenSegmentDriver_0
+endgroup
+current_project edit_AXI_SevenSegmentDriver_v1_0
+set_property  ip_repo_paths  {c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0 c:/ECE_3700/3700-supreme-fiesta/IP_REPO c:/ECE_3700/Vivado/IP_REPO/SevenSegmentDriver C:/ECE_3700/3700-supreme-fiesta} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/Vivado/IP_REPO/SevenSegmentDriver'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1171.746 ; gain = 0.000
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/Vivado/IP_REPO/SevenSegmentDriver'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta'.
+update_ip_catalog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1171.746 ; gain = 0.000
+report_ip_status -name ip_status
+current_project 1_3_Axi-Periferal
+delete_bd_objs [get_bd_cells AXI_SevenSegmentDriver_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:AXI_SevenSegmentDriver:1.0 AXI_SevenSegmentDriver_0
+endgroup
+delete_bd_objs [get_bd_cells AXI_SevenSegmentDriver_0]
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/ublaze/ublaze.bd> 
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:AXI_SevenSegmentDriver:1.0 AXI_SevenSegmentDriver_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/microblaze_0 (Periph)" Clk "Auto" }  [get_bd_intf_pins AXI_SevenSegmentDriver_0/S00_AXI]
+</AXI_SevenSegmentDriver_0/S00_AXI/S00_AXI_reg> is being mapped into </microblaze_0/Data> at <0x44A00000 [ 64K ]>
+regenerate_bd_layout
+create_bd_port -dir O -from 6 -to 0 seg
+connect_bd_net [get_bd_ports seg] [get_bd_pins AXI_SevenSegmentDriver_0/seg]
+create_bd_port -dir I -from 3 -to 0 an
+delete_bd_objs [get_bd_ports an]
+create_bd_port -dir O -from 3 -to 0 an
+connect_bd_net [get_bd_ports an] [get_bd_pins AXI_SevenSegmentDriver_0/an]
+create_bd_port -dir O dp
+connect_bd_net [get_bd_ports dp] [get_bd_pins AXI_SevenSegmentDriver_0/dp]
+save_bd_design
+Wrote  : <C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/ublaze/ublaze.bd> 
+set_property location {1619 87} [get_bd_ports dp]
+set_property location {1626 74} [get_bd_ports dp]
+set_property location {1621 76} [get_bd_ports dp]
+validate_bd_design
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1241.496 ; gain = 0.000
+regenerate_bd_layout
+report_ip_status -name ip_status 
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Sat Mar 24 17:20:57 2018] Launched synth_1...
+Run output will be captured here: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/synth_1/runme.log
+[Sat Mar 24 17:20:57 2018] Launched impl_1...
+Run output will be captured here: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Mar 24 17:38:01 2018] Launched impl_1...
+Run output will be captured here: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something/.Xil/Vivado-56992-DESKTOP-RQADDVB/dcp/SevenSegment_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1.xdc:56]
+get_clocks: Time (s): cpu = 00:01:10 ; elapsed = 00:01:08 . Memory (MB): peak = 1863.445 ; gain = 476.066
+Finished Parsing XDC File [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something/.Xil/Vivado-56992-DESKTOP-RQADDVB/dcp/SevenSegment_wrapper_early.xdc]
+Parsing XDC File [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something/.Xil/Vivado-56992-DESKTOP-RQADDVB/dcp/SevenSegment_wrapper.xdc]
+Finished Parsing XDC File [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something/.Xil/Vivado-56992-DESKTOP-RQADDVB/dcp/SevenSegment_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.265 . Memory (MB): peak = 1863.586 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.266 . Memory (MB): peak = 1863.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:01:54 ; elapsed = 00:01:43 . Memory (MB): peak = 1977.875 ; gain = 736.379
+file mkdir C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk
+file copy -force C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/impl_1/SevenSegment_wrapper.sysdef C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ERROR: [Vivado 12-4392] The hardware handoff file(.sysdef) does not exist. It may not have generated because 
+ 1. Bitstream might nothave generated. Generate bitstream and export otherwise do not include bitstream in export. 
+ 2. There are no IPI design hardware handoff files. Check the log messages for more details 
+ERROR: [Vivado 12-4392] The hardware handoff file(.sysdef) does not exist. It may not have generated because 
+ 1. Bitstream might nothave generated. Generate bitstream and export otherwise do not include bitstream in export. 
+ 2. There are no IPI design hardware handoff files. Check the log messages for more details 
+current_project edit_AXI_SevenSegmentDriver_v1_0
+close_project
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source c:/ece_3700/3700-supreme-fiesta/1_embedded_processor_systems/ip_repo/edit_AXI_SevenSegmentDriver_v1_0.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Mar 24 18:31:43 2018...
+close_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1983.012 ; gain = 0.000
+file copy -force C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/impl_1/SevenSegment_wrapper.sysdef C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 26 16:07:55 2018...

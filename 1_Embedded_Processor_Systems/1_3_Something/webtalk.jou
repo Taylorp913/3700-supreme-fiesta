@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Mar 24 18:31:41 2018
+# Process ID: 54620
+# Current directory: c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something
+# Command line: wbtcv.exe -mode batch -source c:/ece_3700/3700-supreme-fiesta/1_embedded_processor_systems/ip_repo/edit_AXI_SevenSegmentDriver_v1_0.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something/webtalk.log
+# Journal file: c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something\webtalk.jou
+#-----------------------------------------------------------
+source c:/ece_3700/3700-supreme-fiesta/1_embedded_processor_systems/ip_repo/edit_AXI_SevenSegmentDriver_v1_0.hw/webtalk/labtool_webtalk.tcl -notrace

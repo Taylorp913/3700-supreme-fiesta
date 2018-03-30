@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Mar 29 15:25:30 2018
+# Process ID: 6244
+# Current directory: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7692 C:\ECE_3700\3700-supreme-fiesta\1_Embedded_Processor_Systems\1_3_Axi-Periferal\1_3_Axi-Periferal.xpr
+# Log file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/vivado.log
+# Journal file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'SevenSegment.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+SevenSegment_clk_wiz_0_1
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'ublaze.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+ublaze_clk_wiz_1_0
+ublaze_axi_uartlite_0_0
+ublaze_rst_clk_wiz_1_100M_0
+
+open_project: Time (s): cpu = 00:01:13 ; elapsed = 00:00:38 . Memory (MB): peak = 897.305 ; gain = 310.707
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/impl_1/SevenSegment_wrapper.sysdef C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+save_project_as Lab3Redo C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo -force
+WARNING: [IP_Flow 19-2162] IP 'SevenSegment_clk_wiz_0_1' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:basys3:part0:1.1' used to customize the IP 'SevenSegment_clk_wiz_0_1' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ublaze_clk_wiz_1_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:basys3:part0:1.1' used to customize the IP 'ublaze_clk_wiz_1_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ublaze_rst_clk_wiz_1_100M_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:basys3:part0:1.1' used to customize the IP 'ublaze_rst_clk_wiz_1_100M_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ublaze_axi_uartlite_0_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:basys3:part0:1.1' used to customize the IP 'ublaze_axi_uartlite_0_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ublaze_AXI_SevenSegmentDriver_0_0' is locked:
+* IP definition 'AXI_SevenSegmentDriver_v1.0 (1.0)' for IP 'ublaze_AXI_SevenSegmentDriver_0_0' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ublaze_AXI_SevenSegmentDriver_0_1' is locked:
+* IP definition 'AXI_SevenSegmentDriver_v1.0 (1.0)' for IP 'ublaze_AXI_SevenSegmentDriver_0_1' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ublaze_AXI_SevenSegmentDriver_0_2' is locked:
+* IP definition 'AXI_SevenSegmentDriver_v1.0 (1.0)' for IP 'ublaze_AXI_SevenSegmentDriver_0_2' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ublaze_AXI_SevenSegmentDriver_0_3' is locked:
+* IP definition 'AXI_SevenSegmentDriver_v1.0 (1.0)' for IP 'ublaze_AXI_SevenSegmentDriver_0_3' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'SevenSegment.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+SevenSegment_clk_wiz_0_1
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'ublaze.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+ublaze_clk_wiz_1_0
+ublaze_axi_uartlite_0_0
+ublaze_rst_clk_wiz_1_100M_0
+
+save_project_as: Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 907.809 ; gain = 0.000
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+file copy -force C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.runs/impl_1/SevenSegment_wrapper.sysdef C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk/SevenSegment_wrapper.hdf
+
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 29 16:24:51 2018...

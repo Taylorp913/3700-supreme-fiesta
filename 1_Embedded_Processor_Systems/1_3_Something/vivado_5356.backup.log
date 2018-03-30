@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Mar 19 16:09:39 2018
+# Process ID: 5356
+# Current directory: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11172 C:\ECE_3700\3700-supreme-fiesta\1_Embedded_Processor_Systems\1_3_Something\1_2_SevenSegment.xpr
+# Log file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something/vivado.log
+# Journal file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something/1_2_SevenSegment.xpr
+INFO: [Project 1-313] Project file moved from 'C:/ECE_3700/Vivado/Lab2/1_2_SevenSegment' since last save.
+WARNING: [Project 1-312] File not found as 'C:/ECE_3700/3700-supreme-fiesta/Basys3_Master-1.xdc'; using path 'C:/ECE_3700/Vivado/Basys3_Master-1.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/ECE_3700/3700-supreme-fiesta/Basys3_Master-1.xdc'; using path 'C:/ECE_3700/Vivado/Basys3_Master-1.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/ECE_3700/3700-supreme-fiesta/Basys3_Master-1.xdc'; using path 'C:/ECE_3700/Vivado/Basys3_Master-1.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:01:03 ; elapsed = 00:00:30 . Memory (MB): peak = 852.969 ; gain = 265.492
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Mon Mar 19 21:02:55 2018] Launched impl_1...
+Run output will be captured here: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Something/1_2_SevenSegment.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 19 22:17:42 2018...

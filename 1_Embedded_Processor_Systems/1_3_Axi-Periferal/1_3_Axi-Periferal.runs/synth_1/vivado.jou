@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Mar 24 17:21:03 2018
+# Process ID: 64996
+# Current directory: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/synth_1
+# Command line: vivado.exe -log SevenSegment_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source SevenSegment_wrapper.tcl
+# Log file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/synth_1/SevenSegment_wrapper.vds
+# Journal file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SevenSegment_wrapper.tcl -notrace

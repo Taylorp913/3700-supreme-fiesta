@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Mar 28 09:59:09 2018
+# Process ID: 22500
+# Current directory: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23520 C:\ECE_3700\3700-supreme-fiesta\1_Embedded_Processor_Systems\1_3_Axi-Periferal\1_3_Axi-Periferal.xpr
+# Log file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/vivado.log
+# Journal file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:01:36 ; elapsed = 00:01:05 . Memory (MB): peak = 907.168 ; gain = 307.781
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 28 10:23:35 2018...

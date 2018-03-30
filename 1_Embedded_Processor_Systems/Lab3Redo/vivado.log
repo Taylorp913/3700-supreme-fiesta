@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Mar 29 16:56:23 2018
+# Process ID: 3420
+# Current directory: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7576 C:\ECE_3700\3700-supreme-fiesta\1_Embedded_Processor_Systems\Lab3Redo\Lab3Redo.xpr
+# Log file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/vivado.log
+# Journal file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'SevenSegment.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+SevenSegment_clk_wiz_0_1
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'ublaze.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+ublaze_clk_wiz_1_0
+ublaze_axi_uartlite_0_0
+ublaze_rst_clk_wiz_1_100M_0
+
+open_project: Time (s): cpu = 00:01:14 ; elapsed = 00:00:44 . Memory (MB): peak = 922.016 ; gain = 324.488
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk/SevenSegment_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 30 08:10:32 2018...

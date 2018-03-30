@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Sat Mar 24 17:07:05 2018
+| Host         : DESKTOP-RQADDVB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ublaze_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of ublaze_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0 (Rev. 10)) to current project options.
+

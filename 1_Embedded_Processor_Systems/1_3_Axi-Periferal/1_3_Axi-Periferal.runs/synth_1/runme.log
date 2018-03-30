@@ -1,0 +1,558 @@
+
+*** Running vivado
+    with args -log SevenSegment_wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source SevenSegment_wrapper.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source SevenSegment_wrapper.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at C:/Xilinx/Vivado/2015.4/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at C:/Xilinx/Vivado/2015.4/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 222.668 ; gain = 34.738
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/ip_repo/AXI_SevenSegmentDriver_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE_3700/3700-supreme-fiesta/IP_REPO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 242.770 ; gain = 20.102
+Command: synth_design -top SevenSegment_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.02' and will expire in -389 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:34 ; elapsed = 00:00:55 . Memory (MB): peak = 327.148 ; gain = 155.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_wrapper' [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/hdl/SevenSegment_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment' [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/hdl/SevenSegment.v:13]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_SevenSegmentDriver_0_1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_SevenSegmentDriver_0_1/synth/SevenSegment_SevenSegmentDriver_0_1.v:56]
+INFO: [Synth 8-638] synthesizing module 'FullDisplay' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTop.v:16]
+INFO: [Synth 8-638] synthesizing module 'ThePlexer' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/ThePlexer.v:13]
+INFO: [Synth 8-226] default block is never used [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/ThePlexer.v:52]
+INFO: [Synth 8-256] done synthesizing module 'ThePlexer' (1#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/ThePlexer.v:13]
+WARNING: [Synth 8-689] width (8) of port connection 'disp' does not match port width (7) of module 'ThePlexer' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTop.v:63]
+INFO: [Synth 8-638] synthesizing module 'clkB' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/clkB.v:10]
+INFO: [Synth 8-256] done synthesizing module 'clkB' (2#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/clkB.v:10]
+INFO: [Synth 8-638] synthesizing module 'SevenSegmentTruthTable' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTruthTable.v:7]
+INFO: [Synth 8-226] default block is never used [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTruthTable.v:13]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegmentTruthTable' (3#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTruthTable.v:7]
+INFO: [Synth 8-638] synthesizing module 'bcd' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/bcd.v:8]
+INFO: [Synth 8-256] done synthesizing module 'bcd' (4#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/bcd.v:8]
+INFO: [Synth 8-256] done synthesizing module 'FullDisplay' (5#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTop.v:16]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_SevenSegmentDriver_0_1' (6#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_SevenSegmentDriver_0_1/synth/SevenSegment_SevenSegmentDriver_0_1.v:56]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_c_addsub_0_0' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_addsub_0_0/synth/SevenSegment_c_addsub_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:116' bound to instance 'U0' of component 'c_addsub_v12_0_8' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_addsub_0_0/synth/SevenSegment_c_addsub_0_0.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:163]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'xst_addsub' of component 'c_addsub_v12_0_8_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1036]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1039]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1042]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1045]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1048]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1051]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1054]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1057]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1061]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1065]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1068]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1071]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1074]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1077]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1080]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1084]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1089]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1091]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1093]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1096]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1098]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1101]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1106]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1108]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1110]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1112]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1114]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1840]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1843]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1847]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1850]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1853]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1856]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1859]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1862]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1865]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1868]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1871]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1874]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1877]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1880]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1883]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1886]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1889]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1892]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1895]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1898]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1901]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1904]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1907]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1910]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1913]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1916]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1919]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1922]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1925]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1928]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1931]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1934]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1939]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1944]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1947]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1952]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1961]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1965]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2008]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2386]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2390]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:377]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:378]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:379]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:380]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:381]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:382]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:383]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv' (7#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy' (8#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy' (9#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy' (10#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv' (11#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8' (12#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_c_addsub_0_0' (13#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_addsub_0_0/synth/SevenSegment_c_addsub_0_0.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_c_counter_binary_0_3' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_counter_binary_0_3/synth/SevenSegment_c_counter_binary_0_3.vhd:66]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_8' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:116' bound to instance 'U0' of component 'c_counter_binary_v12_0_8' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_counter_binary_0_3/synth/SevenSegment_c_counter_binary_0_3.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_8' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:157]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_8_viv' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1866' bound to instance 'i_synth' of component 'c_counter_binary_v12_0_8_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_8_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1920]
+INFO: [Synth 8-3491] module 'xbip_counter_v3_0_1_viv' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1862' bound to instance 'i_xbip_counter' of component 'xbip_counter_v3_0_1_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2103]
+INFO: [Synth 8-638] synthesizing module 'xbip_counter_v3_0_1_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1897]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-3491] module 'fabric_counter' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1483' bound to instance 'i_fab' of component 'fabric_counter' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:2015]
+INFO: [Synth 8-638] synthesizing module 'fabric_counter' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1507]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_1_viv' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:284' bound to instance 'i_sum_reg' of component 'xbip_pipe_v3_0_1_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1730]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_1_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_1_viv' (14#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_1_viv' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:284' bound to instance 'i_sum_pipe' of component 'xbip_pipe_v3_0_1_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1750]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_1_viv__parameterized1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_1_viv__parameterized1' (14#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+INFO: [Synth 8-256] done synthesizing module 'fabric_counter' (15#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1507]
+INFO: [Synth 8-256] done synthesizing module 'xbip_counter_v3_0_1_viv' (16#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1897]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_8_viv' (17#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1920]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_8' (18#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_c_counter_binary_0_3' (19#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_counter_binary_0_3/synth/SevenSegment_c_counter_binary_0_3.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_c_counter_binary_1_1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_counter_binary_1_1/synth/SevenSegment_c_counter_binary_1_1.vhd:66]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_8' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:116' bound to instance 'U0' of component 'c_counter_binary_v12_0_8' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_counter_binary_1_1/synth/SevenSegment_c_counter_binary_1_1.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_8__parameterized1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:157]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_8_viv' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1866' bound to instance 'i_synth' of component 'c_counter_binary_v12_0_8_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_8_viv__parameterized1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1920]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_8_legacy' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:333' bound to instance 'i_baseblox_counter' of component 'c_counter_binary_v12_0_8_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2046]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_8_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:390]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:524]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:528]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:532]
+INFO: [Common 17-14] Message 'Synth 8-312' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1109]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized1' (19#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized1' (19#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized1' (19#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized1' (19#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_8_legacy' (20#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:390]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_8_viv__parameterized1' (20#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1920]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_8__parameterized1' (20#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_c_counter_binary_1_1' (21#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_counter_binary_1_1/synth/SevenSegment_c_counter_binary_1_1.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_c_shift_ram_0_2' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_0_2/synth/SevenSegment_c_shift_ram_0_2.vhd:67]
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_8' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:119' bound to instance 'U0' of component 'c_shift_ram_v12_0_8' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_0_2/synth/SevenSegment_c_shift_ram_0_2.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'c_shift_ram_v12_0_8' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:158]
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_8_viv' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2495' bound to instance 'i_synth' of component 'c_shift_ram_v12_0_8_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'c_shift_ram_v12_0_8_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2545]
+INFO: [Synth 8-638] synthesizing module 'c_shift_ram_v12_0_8_legacy' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:1549]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'output_regs' of component 'c_reg_fd_v12_0_1_viv' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:1966]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized3' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized3' (21#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_shift_ram_v12_0_8_legacy' (22#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:1549]
+INFO: [Synth 8-256] done synthesizing module 'c_shift_ram_v12_0_8_viv' (23#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2545]
+INFO: [Synth 8-256] done synthesizing module 'c_shift_ram_v12_0_8' (24#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_c_shift_ram_0_2' (25#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_0_2/synth/SevenSegment_c_shift_ram_0_2.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_c_shift_ram_0_3' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_0_3/synth/SevenSegment_c_shift_ram_0_3.vhd:67]
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_8' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:119' bound to instance 'U0' of component 'c_shift_ram_v12_0_8' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_0_3/synth/SevenSegment_c_shift_ram_0_3.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_c_shift_ram_0_3' (26#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_0_3/synth/SevenSegment_c_shift_ram_0_3.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_c_shift_ram_0_0' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_0_0/synth/SevenSegment_c_shift_ram_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_8' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:119' bound to instance 'U0' of component 'c_shift_ram_v12_0_8' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_0_0/synth/SevenSegment_c_shift_ram_0_0.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_c_shift_ram_0_0' (27#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_0_0/synth/SevenSegment_c_shift_ram_0_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_c_shift_ram_2_0' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_2_0/synth/SevenSegment_c_shift_ram_2_0.vhd:67]
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_8' declared at 'c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:119' bound to instance 'U0' of component 'c_shift_ram_v12_0_8' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_2_0/synth/SevenSegment_c_shift_ram_2_0.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_c_shift_ram_2_0' (28#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_c_shift_ram_2_0/synth/SevenSegment_c_shift_ram_2_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_clk_wiz_0_1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1.v:69]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_clk_wiz_0_1_clk_wiz' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1_clk_wiz.v:67]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14145]
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (29#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14145]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (30#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (31#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_clk_wiz_0_1_clk_wiz' (32#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1_clk_wiz.v:67]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_clk_wiz_0_1' (33#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1.v:69]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment_xlconcat_0_1' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_xlconcat_0_1/synth/SevenSegment_xlconcat_0_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (34#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_xlconcat_0_1' (35#1) [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_xlconcat_0_1/synth/SevenSegment_xlconcat_0_1.v:57]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment' (36#1) [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/hdl/SevenSegment.v:13]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment_wrapper' (37#1) [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/hdl/SevenSegment_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:48 ; elapsed = 00:02:11 . Memory (MB): peak = 372.973 ; gain = 200.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:49 ; elapsed = 00:02:12 . Memory (MB): peak = 372.973 ; gain = 200.910
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1_board.xdc] for cell 'SevenSegment_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1_board.xdc] for cell 'SevenSegment_i/clk_wiz_0/inst'
+Parsing XDC File [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1.xdc] for cell 'SevenSegment_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1.xdc] for cell 'SevenSegment_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ip/SevenSegment_clk_wiz_0_1/SevenSegment_clk_wiz_0_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SevenSegment_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SevenSegment_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/constrs_1/imports/Vivado/Basys3_Master-1.xdc]
+Finished Parsing XDC File [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/constrs_1/imports/Vivado/Basys3_Master-1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/constrs_1/imports/Vivado/Basys3_Master-1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SevenSegment_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SevenSegment_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SevenSegment_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SevenSegment_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 646.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:24 ; elapsed = 00:02:52 . Memory (MB): peak = 646.828 ; gain = 474.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:24 ; elapsed = 00:02:52 . Memory (MB): peak = 646.828 ; gain = 474.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for SevenSegment_i/clk_wiz_0/inst. (constraint file  C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.runs/synth_1/dont_touch.xdc, line 40).
+Applied set_property DONT_TOUCH = true for SevenSegment_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SevenSegment_i/SevenSegmentDriver_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SevenSegment_i/c_addsub_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SevenSegment_i/c_counter_binary_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SevenSegment_i/c_counter_binary_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SevenSegment_i/c_shift_ram_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SevenSegment_i/c_shift_ram_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SevenSegment_i/c_shift_ram_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SevenSegment_i/c_shift_ram_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SevenSegment_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SevenSegment_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:24 ; elapsed = 00:02:53 . Memory (MB): peak = 646.828 ; gain = 474.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "dp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "refClk" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'dp_reg' [c:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_3_Axi-Periferal/1_3_Axi-Periferal.srcs/sources_1/bd/SevenSegment/ipshared/usu.edu/sevensegmentdriver_v1_0/ThePlexer.v:65]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:28 ; elapsed = 00:02:57 . Memory (MB): peak = 646.828 ; gain = 474.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:29 ; elapsed = 00:02:58 . Memory (MB): peak = 646.828 ; gain = 474.766
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "inst/clkInst/refClk" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:30 ; elapsed = 00:03:00 . Memory (MB): peak = 646.828 ; gain = 474.766
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:02:30 ; elapsed = 00:03:00 . Memory (MB): peak = 646.828 ; gain = 474.766
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:02:41 ; elapsed = 00:03:11 . Memory (MB): peak = 646.828 ; gain = 474.766
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:41 ; elapsed = 00:03:11 . Memory (MB): peak = 646.828 ; gain = 474.766
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:24 ; elapsed = 00:03:56 . Memory (MB): peak = 646.828 ; gain = 474.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:25 ; elapsed = 00:03:56 . Memory (MB): peak = 646.828 ; gain = 474.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:26 ; elapsed = 00:03:59 . Memory (MB): peak = 660.785 ; gain = 488.723
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:03:26 ; elapsed = 00:03:59 . Memory (MB): peak = 660.785 ; gain = 488.723
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:03:26 ; elapsed = 00:03:59 . Memory (MB): peak = 660.785 ; gain = 488.723
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:29 ; elapsed = 00:04:01 . Memory (MB): peak = 660.785 ; gain = 488.723
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:29 ; elapsed = 00:04:01 . Memory (MB): peak = 660.785 ; gain = 488.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:29 ; elapsed = 00:04:01 . Memory (MB): peak = 660.785 ; gain = 488.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:29 ; elapsed = 00:04:01 . Memory (MB): peak = 660.785 ; gain = 488.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:29 ; elapsed = 00:04:01 . Memory (MB): peak = 660.785 ; gain = 488.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:29 ; elapsed = 00:04:01 . Memory (MB): peak = 660.785 ; gain = 488.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |     6|
+|3     |LUT1       |    28|
+|4     |LUT2       |    24|
+|5     |LUT3       |     2|
+|6     |LUT4       |    44|
+|7     |LUT5       |    20|
+|8     |LUT6       |    65|
+|9     |MMCME2_ADV |     1|
+|10    |MUXCY      |    16|
+|11    |XORCY      |    18|
+|12    |FDRE       |    51|
+|13    |LD         |     1|
+|14    |IBUF       |    21|
+|15    |OBUF       |    15|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:29 ; elapsed = 00:04:01 . Memory (MB): peak = 660.785 ; gain = 488.723
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:03:02 . Memory (MB): peak = 660.785 ; gain = 135.172
+Synthesis Optimization Complete : Time (s): cpu = 00:03:30 ; elapsed = 00:04:02 . Memory (MB): peak = 660.785 ; gain = 488.723
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 5 instances
+  LD => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+180 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:18 ; elapsed = 00:03:36 . Memory (MB): peak = 660.785 ; gain = 418.016
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 660.785 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 24 17:25:14 2018...

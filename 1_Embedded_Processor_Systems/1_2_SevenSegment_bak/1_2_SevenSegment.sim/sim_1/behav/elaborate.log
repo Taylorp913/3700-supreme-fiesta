@@ -1,0 +1,71 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 622730616ef64e40b7ff2322a8dc4ed7 --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_5 -L c_reg_fd_v12_0_1 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_1 -L xbip_dsp48_addsub_v3_0_1 -L xbip_addsub_v3_0_1 -L c_addsub_v12_0_8 -L c_gate_bit_v12_0_1 -L xbip_counter_v3_0_1 -L c_counter_binary_v12_0_8 -L c_mux_bit_v12_0_1 -L c_shift_ram_v12_0_8 -L unisims_ver -L unimacro_ver -L secureip --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port disp [C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_2_SevenSegment/1_2_SevenSegment.ip_user_files/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTop.v:63]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_counter_binary_v12_0_8.c_counter_binary_v12_0_8_viv_com...
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package xbip_counter_v3_0_1.xbip_counter_v3_0_1_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xbip_counter_v3_0_1.xbip_counter_v3_0_1_pkg
+Compiling package c_counter_binary_v12_0_8.c_counter_binary_v12_0_8_pkg
+Compiling package xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv_comp
+Compiling package c_gate_bit_v12_0_1.c_gate_bit_v12_0_1_viv_comp
+Compiling package xbip_counter_v3_0_1.xbip_counter_v3_0_1_hdl_comps
+Compiling package c_addsub_v12_0_8.c_addsub_v12_0_8_pkg_legacy
+Compiling package c_reg_fd_v12_0_1.c_reg_fd_v12_0_1_viv_comp
+Compiling package c_addsub_v12_0_8.c_addsub_v12_0_8_pkg
+Compiling package unisim.vcomponents
+Compiling package c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_viv_comp
+Compiling package c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_pkg
+Compiling package c_mux_bit_v12_0_1.c_mux_bit_v12_0_1_viv_comp
+Compiling module xil_defaultlib.ThePlexer
+Compiling module xil_defaultlib.clkB
+Compiling module xil_defaultlib.SevenSegmentTruthTable
+Compiling module xil_defaultlib.bcd
+Compiling module xil_defaultlib.FullDisplay
+Compiling module xil_defaultlib.design_1_SevenSegmentDriver_0_0
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(1,1,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_1.xbip_pipe_v3_0_1_viv [\xbip_pipe_v3_0_1_viv(0,1,0,0,0,...]
+Compiling architecture synth of entity xbip_counter_v3_0_1.fabric_counter [\fabric_counter("artix7",0,0,0,(...]
+Compiling architecture synth of entity xbip_counter_v3_0_1.xbip_counter_v3_0_1_viv [\xbip_counter_v3_0_1_viv("artix7...]
+Compiling architecture synth of entity c_counter_binary_v12_0_8.c_counter_binary_v12_0_8_viv [\c_counter_binary_v12_0_8_viv(0,...]
+Compiling architecture xilinx of entity c_counter_binary_v12_0_8.c_counter_binary_v12_0_8 [\c_counter_binary_v12_0_8(0,0,"a...]
+Compiling architecture design_1_c_counter_binary_0_0_arch of entity xil_defaultlib.design_1_c_counter_binary_0_0 [design_1_c_counter_binary_0_0_de...]
+Compiling architecture structural of entity c_reg_fd_v12_0_1.c_reg_fd_v12_0_1_viv [\c_reg_fd_v12_0_1_viv(2,"0","0",...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_8.c_addsub_v12_0_8_lut6_legacy [\c_addsub_v12_0_8_lut6_legacy(2,...]
+Compiling architecture synth of entity c_addsub_v12_0_8.c_addsub_v12_0_8_fabric_legacy [\c_addsub_v12_0_8_fabric_legacy(...]
+Compiling architecture synth of entity c_addsub_v12_0_8.c_addsub_v12_0_8_legacy [\c_addsub_v12_0_8_legacy("artix7...]
+Compiling architecture synth of entity c_counter_binary_v12_0_8.c_counter_binary_v12_0_8_legacy [\c_counter_binary_v12_0_8_legacy...]
+Compiling architecture synth of entity c_counter_binary_v12_0_8.c_counter_binary_v12_0_8_viv [\c_counter_binary_v12_0_8_viv(0,...]
+Compiling architecture xilinx of entity c_counter_binary_v12_0_8.c_counter_binary_v12_0_8 [\c_counter_binary_v12_0_8(0,0,"a...]
+Compiling architecture design_1_c_counter_binary_0_1_arch of entity xil_defaultlib.design_1_c_counter_binary_0_1 [design_1_c_counter_binary_0_1_de...]
+Compiling architecture structural of entity c_reg_fd_v12_0_1.c_reg_fd_v12_0_1_viv [\c_reg_fd_v12_0_1_viv(1,"0","0",...]
+Compiling architecture struct of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_legacy [\c_shift_ram_v12_0_8_legacy("art...]
+Compiling architecture synth of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_viv [\c_shift_ram_v12_0_8_viv("artix7...]
+Compiling architecture xilinx of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8 [\c_shift_ram_v12_0_8("artix7",0,...]
+Compiling architecture design_1_c_shift_ram_0_0_arch of entity xil_defaultlib.design_1_c_shift_ram_0_0 [design_1_c_shift_ram_0_0_default]
+Compiling architecture design_1_c_shift_ram_0_1_arch of entity xil_defaultlib.design_1_c_shift_ram_0_1 [design_1_c_shift_ram_0_1_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.xlconcat(IN1_WIDTH=2,dout_width=...
+Compiling module xil_defaultlib.design_1_xlconcat_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_1_wrapper_behav
