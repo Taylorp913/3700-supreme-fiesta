@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="C:/Users/Taylor/Documents/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_2_axi_logic_interface/1_2_ublaze_system.xpr">
+<Project Version="7" Minor="10" Path="/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_2_axi_logic_interface/1_2_ublaze_system.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="c2bc92e9962e42648e29f252408d9281"/>
@@ -35,26 +35,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_microblaze_0_axi_periph_0/ublaze_microblaze_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_axi_gpio_0_0/ublaze_axi_gpio_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_axi_uartlite_0_0/ublaze_axi_uartlite_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_rst_clk_wiz_1_100M_0/ublaze_rst_clk_wiz_1_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_clk_wiz_1_0/ublaze_clk_wiz_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_lmb_bram_0/ublaze_lmb_bram_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_dlmb_v10_0/ublaze_dlmb_v10_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_microblaze_0_0/ublaze_microblaze_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_xbar_0/ublaze_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_axi_timer_0_0/ublaze_axi_timer_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_mdm_1_0/ublaze_mdm_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_ilmb_bram_if_cntlr_0/ublaze_ilmb_bram_if_cntlr_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_dlmb_bram_if_cntlr_0/ublaze_dlmb_bram_if_cntlr_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ip/ublaze_ilmb_v10_0/ublaze_ilmb_v10_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ublaze.bmm"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="ublaze_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="hdl/ublaze.v"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="hw_handoff/ublaze_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="hdl/ublaze.hwdef"/>
-        <CompFileExtendedInfo CompFileName="ublaze.bd" FileRelPathName="hw_handoff/ublaze.hwh"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ublaze/hdl/ublaze_wrapper.v">
         <FileInfo>
@@ -134,31 +114,26 @@
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
     </Simulator>
-    <Simulator Name="ActiveHDL">
-      <Option Name="Description" Val="Active-HDL Simulator"/>
-    </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Trades off Performance and Area for better Runtime." Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Flow_RuntimeOptimized" Flow="Vivado Synthesis 2015"/>
         <Step Id="synth_design">
-          <Option Id="FlattenHierarchy">1</Option>
           <Option Id="FsmExtraction">0</Option>
           <Option Id="Directive">0</Option>
+          <Option Id="FlattenHierarchy">1</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
     <Run Id="synth_2_basysboard" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Trades off Performance and Area for better Runtime." State="current" Dir="$PRUNDIR/synth_2_basysboard" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Flow_RuntimeOptimized" Flow="Vivado Synthesis 2015">
-          <Desc>Trades off Performance and Area for better Runtime.</Desc>
-        </StratHandle>
+        <StratHandle Name="Flow_RuntimeOptimized" Flow="Vivado Synthesis 2015"/>
         <Step Id="synth_design">
-          <Option Id="FlattenHierarchy">1</Option>
           <Option Id="Directive">0</Option>
           <Option Id="FsmExtraction">0</Option>
+          <Option Id="FlattenHierarchy">1</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -186,9 +161,7 @@
     </Run>
     <Run Id="impl_2" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_2" SynthRun="synth_2_basysboard" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
-          <Desc>Vivado Implementation Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

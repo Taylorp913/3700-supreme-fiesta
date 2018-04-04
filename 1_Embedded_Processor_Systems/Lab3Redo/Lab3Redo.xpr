@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.xpr">
+<Project Version="7" Minor="10" Path="/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f222f46f979941c68e7b36da34c91ac6"/>
@@ -125,9 +125,6 @@
     </Simulator>
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
-    </Simulator>
-    <Simulator Name="ActiveHDL">
-      <Option Name="Description" Val="Active-HDL Simulator"/>
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">

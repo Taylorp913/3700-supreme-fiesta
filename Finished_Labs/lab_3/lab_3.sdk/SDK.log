@@ -1,0 +1,223 @@
+16:00:34 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:00:36 INFO  : XSDB server has started successfully.
+16:00:39 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper.hdf.
+16:11:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:43:57 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:43:58 INFO  : XSDB server has started successfully.
+16:43:58 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper.hdf.
+16:43:58 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:44:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+16:44:31 INFO  : FPGA configured successfully with bitstream "C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:44:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+16:44:56 INFO  : 'fpga -state' command is executed.
+16:44:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:56 INFO  : Context for processor 'microblaze_0' is selected.
+16:44:56 INFO  : Hardware design information is loaded from 'C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:44:57 INFO  : Context for processor 'microblaze_0' is selected.
+16:44:57 INFO  : System reset is completed.
+16:45:00 INFO  : Context for processor 'microblaze_0' is selected.
+16:45:00 INFO  : The application 'C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/lab3/Debug/lab3.elf' is downloaded to processor 'microblaze_0'.
+16:45:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+loadhw C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+dow C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/lab3/Debug/lab3.elf
+----------------End of Script----------------
+
+16:45:00 INFO  : Memory regions updated for context MicroBlaze #0
+16:45:00 INFO  : Context for processor 'microblaze_0' is selected.
+16:45:01 INFO  : 'con' command is executed.
+16:45:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+con
+----------------End of Script----------------
+
+16:45:25 INFO  : Disconnected from the channel tcfchan#1.
+16:45:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+16:45:26 INFO  : 'fpga -state' command is executed.
+16:45:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:45:26 INFO  : Context for processor 'microblaze_0' is selected.
+16:45:27 INFO  : Hardware design information is loaded from 'C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:45:27 INFO  : Context for processor 'microblaze_0' is selected.
+16:45:27 INFO  : System reset is completed.
+16:45:30 INFO  : Context for processor 'microblaze_0' is selected.
+16:45:30 INFO  : The application 'C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/lab3/Debug/lab3.elf' is downloaded to processor 'microblaze_0'.
+16:45:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+loadhw C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+dow C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/lab3/Debug/lab3.elf
+----------------End of Script----------------
+
+16:45:30 INFO  : Memory regions updated for context MicroBlaze #0
+16:45:30 INFO  : Context for processor 'microblaze_0' is selected.
+16:45:31 INFO  : 'con' command is executed.
+16:45:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+con
+----------------End of Script----------------
+
+17:04:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1519257835989,  Project:1518230086000
+17:04:21 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+17:04:42 INFO  : Copied contents of C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+17:04:42 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:04:46 INFO  : 
+17:04:47 INFO  : Updating hardware inferred compiler options for lab3.
+17:04:47 INFO  : Clearing existing target manager status.
+17:05:13 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:05:13 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:05:32 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:05:33 INFO  : XSDB server has started successfully.
+17:05:33 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper.hdf.
+17:05:33 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:06:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:06:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+17:06:22 INFO  : FPGA configured successfully with bitstream "C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/download.bit"
+17:06:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+17:06:41 INFO  : 'fpga -state' command is executed.
+17:06:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:06:41 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:41 INFO  : Hardware design information is loaded from 'C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:06:42 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:42 INFO  : System reset is completed.
+17:06:45 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:45 INFO  : The application 'C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/lab3/Debug/lab3.elf' is downloaded to processor 'microblaze_0'.
+17:06:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+loadhw C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+dow C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/lab3/Debug/lab3.elf
+----------------End of Script----------------
+
+17:06:46 INFO  : Memory regions updated for context MicroBlaze #0
+17:06:46 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:46 INFO  : 'con' command is executed.
+17:06:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+con
+----------------End of Script----------------
+
+17:06:58 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 59 xsdb eval "disconnect tcfchan#1"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+17:08:13 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+17:08:13 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+16:15:09 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:15:11 INFO  : XSDB server has started successfully.
+16:15:13 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper.hdf.
+16:15:13 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:15:13 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1519257836000,  Project:1519257835989
+16:15:13 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper.hdf.
+16:15:13 INFO  : Copied contents of C:/Users/labuser/Desktop/project_3/project_3/project_3.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+16:15:21 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:15:25 INFO  : 
+16:15:27 INFO  : Updating hardware inferred compiler options for lab3.
+16:15:27 INFO  : Clearing existing target manager status.
+16:29:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:30:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:30:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:31:10 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:38:25 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:38:27 INFO  : XSDB server has started successfully.
+16:38:28 INFO  : Processing command line option -hwspec D:/ECE3700/project_3/project_3/project_3/project_3.sdk/design_1_wrapper.hdf.
+16:39:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:39:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+16:39:38 INFO  : FPGA configured successfully with bitstream "D:/ECE3700/project_3/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:39:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+16:39:48 INFO  : 'fpga -state' command is executed.
+16:39:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:39:48 INFO  : Context for processor 'microblaze_0' is selected.
+16:39:48 INFO  : Hardware design information is loaded from 'D:/ECE3700/project_3/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:39:49 INFO  : Context for processor 'microblaze_0' is selected.
+16:39:49 INFO  : System reset is completed.
+16:39:52 INFO  : Context for processor 'microblaze_0' is selected.
+16:39:52 INFO  : The application 'D:/ECE3700/project_3/project_3/project_3/project_3.sdk/lab3/Debug/lab3.elf' is downloaded to processor 'microblaze_0'.
+16:39:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+loadhw D:/ECE3700/project_3/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+dow D:/ECE3700/project_3/project_3/project_3/project_3.sdk/lab3/Debug/lab3.elf
+----------------End of Script----------------
+
+16:39:52 INFO  : Memory regions updated for context MicroBlaze #0
+16:39:52 INFO  : Context for processor 'microblaze_0' is selected.
+16:39:53 INFO  : 'con' command is executed.
+16:39:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+con
+----------------End of Script----------------
+
+16:40:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+16:41:01 INFO  : FPGA configured successfully with bitstream "D:/ECE3700/project_3/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:41:30 INFO  : Disconnected from the channel tcfchan#1.
+16:41:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+16:41:31 INFO  : 'fpga -state' command is executed.
+16:41:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:32 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:32 INFO  : Hardware design information is loaded from 'D:/ECE3700/project_3/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:41:32 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:32 INFO  : System reset is completed.
+16:41:36 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:36 INFO  : The application 'D:/ECE3700/project_3/project_3/project_3/project_3.sdk/lab3/Debug/lab3.elf' is downloaded to processor 'microblaze_0'.
+16:41:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+loadhw D:/ECE3700/project_3/project_3/project_3/project_3.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+dow D:/ECE3700/project_3/project_3/project_3/project_3.sdk/lab3/Debug/lab3.elf
+----------------End of Script----------------
+
+16:41:36 INFO  : Memory regions updated for context MicroBlaze #0
+16:41:36 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:36 INFO  : 'con' command is executed.
+16:41:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F39EA"} -index 0
+con
+----------------End of Script----------------
+
+21:44:36 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:44:37 INFO  : XSDB server has started successfully.
+21:44:37 INFO  : Processing command line option -hwspec /home/taylor/ECE_3700/ECE3700/project_3/project_3/project_3/project_3.sdk/design_1_wrapper.hdf.
+21:47:58 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:47:59 INFO  : XSDB server has started successfully.
+21:48:00 INFO  : Processing command line option -hwspec /home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_3/lab_3.sdk/design_1_wrapper.hdf.

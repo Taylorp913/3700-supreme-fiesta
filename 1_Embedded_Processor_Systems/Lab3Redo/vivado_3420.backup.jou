@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Mar 29 16:56:23 2018
+# Process ID: 3420
+# Current directory: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7576 C:\ECE_3700\3700-supreme-fiesta\1_Embedded_Processor_Systems\Lab3Redo\Lab3Redo.xpr
+# Log file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/vivado.log
+# Journal file: C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.xpr
+launch_sdk -workspace C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk -hwspec C:/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/Lab3Redo/Lab3Redo.sdk/SevenSegment_wrapper.hdf

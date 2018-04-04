@@ -1,0 +1,82 @@
+15:57:53 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:57:55 INFO  : XSDB server has started successfully.
+15:57:57 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+15:58:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:59:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:59:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:59:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:01:45 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:01:46 INFO  : XSDB server has started successfully.
+16:01:47 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+16:01:48 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:02:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:04:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:43:50 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:43:52 INFO  : XSDB server has started successfully.
+16:43:55 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+16:43:55 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:43:55 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1518217034000,  Project:1518217032519
+16:43:55 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+16:43:55 INFO  : Copied contents of C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+16:43:56 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:43:56 INFO  : Clearing existing target manager status.
+16:43:57 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+16:43:57 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+16:44:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+16:44:26 INFO  : FPGA configured successfully with bitstream "C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:12:15 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:17:51 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:17:52 INFO  : XSDB server has started successfully.
+17:17:52 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+17:17:53 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:18:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+17:18:12 INFO  : FPGA configured successfully with bitstream "C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:38:31 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:38:32 INFO  : XSDB server has started successfully.
+17:38:32 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+17:38:33 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:38:33 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1518223068952,  Project:1518217034000
+17:38:33 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+17:38:33 INFO  : Copied contents of C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+17:38:33 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:38:33 INFO  : Clearing existing target manager status.
+17:38:34 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+17:38:34 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+17:39:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:39:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+17:39:14 INFO  : FPGA configured successfully with bitstream "C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:42:35 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:47:03 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:47:04 INFO  : XSDB server has started successfully.
+17:47:04 INFO  : Processing command line option -hwspec C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+17:47:05 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:47:05 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1518223569948,  Project:1518223068952
+17:47:05 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+17:47:05 INFO  : Copied contents of C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+17:47:06 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:47:06 INFO  : Clearing existing target manager status.
+17:47:07 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+17:47:07 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+17:47:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:47:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+17:47:20 INFO  : FPGA configured successfully with bitstream "C:/Users/labuser/Desktop/ECE3700/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:49:30 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:36:32 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:36:35 INFO  : XSDB server has started successfully.
+16:36:36 INFO  : Processing command line option -hwspec D:/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+16:36:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+16:36:49 INFO  : FPGA configured successfully with bitstream "D:/ECE3700/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:09:25 INFO  : Launching XSDB server: xsdb.bat C:/Software/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:09:26 INFO  : XSDB server has started successfully.
+17:09:27 INFO  : Processing command line option -hwspec D:/ECE3700/project_2/project_2.sdk/design_1_wrapper.hdf.
+17:09:28 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+17:09:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:09:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F39EA" && level==0} -index 0' command is executed.
+17:09:40 INFO  : FPGA configured successfully with bitstream "D:/ECE3700/project_2/project_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:29:11 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:29:12 INFO  : XSDB server has started successfully.
+21:29:13 INFO  : Processing command line option -hwspec /home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_2/lab_2.sdk/design_1_wrapper.hdf.

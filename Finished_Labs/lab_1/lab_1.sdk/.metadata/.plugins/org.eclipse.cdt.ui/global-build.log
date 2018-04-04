@@ -1,0 +1,662 @@
+15:46:28 **** Build of project ublaze_test_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_1/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_1/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+15:46:33 **** Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3320	    288	   3120	   6728	   1a48	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+15:47:39 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3320	    288	   3120	   6728	   1a48	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:05:22 **** Auto Build of project ublaze_test_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_1/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_1/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+17:05:28 **** Clean-only build of configuration Debug for project ublaze_test ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  ublaze_test.elf.size  ublaze_test.elf
+ 
+17:05:28 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3320	    288	   3120	   6728	   1a48	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:09:24 **** Auto Build of project ublaze_test_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/tmrctr_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_1/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/tmrctr_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_1/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+17:09:29 **** Clean-only build of configuration Debug for project ublaze_test ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  ublaze_test.elf.size  ublaze_test.elf
+ 
+17:09:30 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3320	    288	   3120	   6728	   1a48	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:15:03 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3320	    288	   3136	   6744	   1a58	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:21:15 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:79:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8245	    308	   3140	  11693	   2dad	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:26:31 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+17:26:42 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+17:27:04 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+17:28:03 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+17:33:16 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:83:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8245	    308	   3140	  11693	   2dad	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:33:21 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/scanvalue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scanvalue.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/scanvalue.d" -MT"src/scanvalue.d" -o "src/scanvalue.o" "../src/scanvalue.c"
+../src/scanvalue.c: In function 'rsscanf':
+../src/scanvalue.c:10:21: warning: variable 'pf' set but not used [-Wunused-but-set-variable]
+         const char* pf;
+                     ^
+Finished building: ../src/scanvalue.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28285	   1348	   3212	  32845	   804d	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:36:54 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28301	   1348	   3212	  32861	   805d	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:37:10 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+17:37:22 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+17:51:23 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:86:42: error: 'val' undeclared (first use in this function)
+      xil_printf("Read switch values %x.",val);
+                                          ^
+../src/helloworld.c:86:42: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:96:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+make: *** [src/helloworld.o] Error 1
+17:51:52 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28473	   1348	   3219	  33040	   8110	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:51:59 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+17:54:26 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+14:47:11 **** Auto Build of project ublaze_test_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/tmrctr_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_1/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_3/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_0/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/tmrctr_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_1/src"
+C:/Software/Xilinx/SDK/2015.4/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+14:47:25 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/scanvalue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scanvalue.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/scanvalue.d" -MT"src/scanvalue.d" -o "src/scanvalue.o" "../src/scanvalue.c"
+../src/scanvalue.c: In function 'rsscanf':
+../src/scanvalue.c:10:21: warning: variable 'pf' set but not used [-Wunused-but-set-variable]
+         const char* pf;
+                     ^
+Finished building: ../src/scanvalue.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28473	   1348	   3219	  33040	   8110	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+15:17:32 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28473	   1348	   3219	  33040	   8110	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+15:17:50 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+15:18:32 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+15:18:55 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+15:19:24 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28473	   1348	   3219	  33040	   8110	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+15:19:28 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+16:54:35 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+17:01:19 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+../src/helloworld.c:89:6: warning: right shift count >= width of type
+      XGpio_DiscreteWrite(&gpio_iface, 1, diff >> 0xFF);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28593	   1348	   3219	  33160	   8188	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:01:58 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28529	   1348	   3219	  33096	   8148	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:02:55 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+17:08:03 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28533	   1348	   3212	  33093	   8145	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:09:06 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28533	   1348	   3212	  33093	   8145	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+17:09:08 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for `all'.
+15:55:48 **** Auto Build of project ublaze_test_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/uartlite_v3_1/src
+make -C microblaze_0/libsrc/uartlite_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_0/src
+make -C microblaze_0/libsrc/tmrctr_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/standalone_v5_3/src
+make -C microblaze_0/libsrc/standalone_v5_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/gpio_v4_0/src
+make -C microblaze_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in microblaze_0/libsrc/uartlite_v3_1/src
+make -C microblaze_0/libsrc/uartlite_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_0/src
+make -C microblaze_0/libsrc/tmrctr_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling tmrctr
+Running Make libs in microblaze_0/libsrc/standalone_v5_3/src
+make -C microblaze_0/libsrc/standalone_v5_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/cpu_v2_3/src
+make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/bram_v4_0/src
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/gpio_v4_0/src
+make -C microblaze_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Finished building libraries
+15:55:50 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:6: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+      MB_Sleep(1000);
+      ^
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/scanvalue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scanvalue.o" -I../../ublaze_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/scanvalue.d" -MT"src/scanvalue.d" -o "src/scanvalue.o" "../src/scanvalue.c"
+../src/scanvalue.c: In function 'rsscanf':
+../src/scanvalue.c:10:21: warning: variable 'pf' set but not used [-Wunused-but-set-variable]
+         const char* pf;
+                     ^
+Finished building: ../src/scanvalue.c
+ 
+Building target: ublaze_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ublaze_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "ublaze_test.elf"  ./src/helloworld.o ./src/platform.o ./src/scanvalue.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ublaze_test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ublaze_test.elf  |tee "ublaze_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28533	   1348	   3212	  33093	   8145	ublaze_test.elf
+Finished building: ublaze_test.elf.size
+ 
+16:28:36 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:57 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.
+16:35:33 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.
+16:35:49 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.
+20:35:20 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.
+20:41:50 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.
+21:23:44 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.

@@ -556,3 +556,6 @@ targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag
 con
 ----------------End of Script----------------
 
+20:21:51 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:21:52 INFO  : XSDB server has started successfully.
+20:21:53 INFO  : Processing command line option -hwspec /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_2_axi_logic_interface/1_2_ublaze_system.sdk/ublaze_wrapper.hdf.

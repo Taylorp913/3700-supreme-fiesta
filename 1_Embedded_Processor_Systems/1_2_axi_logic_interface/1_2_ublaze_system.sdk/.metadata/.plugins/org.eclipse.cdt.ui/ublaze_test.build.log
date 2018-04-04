@@ -1,6 +1,6 @@
-13:34:20 **** Incremental Build of configuration Debug for project ublaze_test ****
+20:21:48 **** Auto Build of configuration Debug for project ublaze_test ****
 make all 
-make: Nothing to be done for `all'.
+make: Nothing to be done for 'all'.
 
-13:34:21 Build Finished (took 808ms)
+20:21:49 Build Finished (took 330ms)
 

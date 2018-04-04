@@ -1,0 +1,6 @@
+21:23:44 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.
+
+21:23:45 Build Finished (took 311ms)
+

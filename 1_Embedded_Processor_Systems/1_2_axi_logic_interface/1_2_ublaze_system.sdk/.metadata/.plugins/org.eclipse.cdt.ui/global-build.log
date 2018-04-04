@@ -34,3 +34,6 @@ make: Nothing to be done for `all'.
 13:34:20 **** Incremental Build of configuration Debug for project ublaze_test ****
 make all 
 make: Nothing to be done for `all'.
+20:21:48 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.

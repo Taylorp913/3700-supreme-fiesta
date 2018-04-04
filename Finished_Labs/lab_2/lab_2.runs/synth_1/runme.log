@@ -1,0 +1,630 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at C:/Software/Xilinx/Vivado/2015.4/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at C:/Software/Xilinx/Vivado/2015.4/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Software/Xilinx/Vivado/2015.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/labuser/Desktop/ECE3700/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Software/Xilinx/Vivado/2015.4/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7a35tcpg236-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 298.340 ; gain = 127.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_SevenSegmentDriver_0_0' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_SevenSegmentDriver_0_0/synth/design_1_SevenSegmentDriver_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'FullDisplay' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTop.v:16]
+INFO: [Synth 8-638] synthesizing module 'ThePlexer' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/ThePlexer.v:13]
+INFO: [Synth 8-226] default block is never used [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/ThePlexer.v:52]
+INFO: [Synth 8-256] done synthesizing module 'ThePlexer' (1#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/ThePlexer.v:13]
+WARNING: [Synth 8-689] width (8) of port connection 'disp' does not match port width (7) of module 'ThePlexer' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTop.v:63]
+INFO: [Synth 8-638] synthesizing module 'clkB' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/clkB.v:10]
+INFO: [Synth 8-256] done synthesizing module 'clkB' (2#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/clkB.v:10]
+INFO: [Synth 8-638] synthesizing module 'SevenSegmentTruthTable' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTruthTable.v:7]
+INFO: [Synth 8-226] default block is never used [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTruthTable.v:13]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegmentTruthTable' (3#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTruthTable.v:7]
+INFO: [Synth 8-638] synthesizing module 'bcd' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/bcd.v:8]
+INFO: [Synth 8-256] done synthesizing module 'bcd' (4#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/bcd.v:8]
+INFO: [Synth 8-256] done synthesizing module 'FullDisplay' (5#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/SevenSegmentTop.v:16]
+INFO: [Synth 8-256] done synthesizing module 'design_1_SevenSegmentDriver_0_0' (6#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_SevenSegmentDriver_0_0/synth/design_1_SevenSegmentDriver_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_addsub_0_0' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_addsub_0_0/synth/design_1_c_addsub_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:116' bound to instance 'U0' of component 'c_addsub_v12_0_8' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_addsub_0_0/synth/design_1_c_addsub_0_0.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:163]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'xst_addsub' of component 'c_addsub_v12_0_8_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1036]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1039]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1042]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1045]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1048]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1051]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1054]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1057]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1061]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1065]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1068]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1071]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1074]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1077]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1080]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1084]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1089]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1091]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1093]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1096]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1098]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1101]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1106]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1108]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1110]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1112]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1114]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1840]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1843]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1847]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1850]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1853]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1856]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1859]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1862]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1865]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1868]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1871]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1874]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1877]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1880]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1883]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1886]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1889]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1892]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1895]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1898]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1901]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1904]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1907]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1910]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1913]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1916]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1919]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1922]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1925]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1928]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1931]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1934]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1939]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1944]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1947]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1952]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1961]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:1965]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2008]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2386]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2390]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:377]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:378]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:379]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:380]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:381]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:382]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:383]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv' (7#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy' (8#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy' (9#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy' (10#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv' (11#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8' (12#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0.vhd:163]
+INFO: [Synth 8-256] done synthesizing module 'design_1_c_addsub_0_0' (13#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_addsub_0_0/synth/design_1_c_addsub_0_0.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_counter_binary_0_0' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_8' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:116' bound to instance 'U0' of component 'c_counter_binary_v12_0_8' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_8' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:157]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_8_viv' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1866' bound to instance 'i_synth' of component 'c_counter_binary_v12_0_8_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_8_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1920]
+INFO: [Synth 8-3491] module 'xbip_counter_v3_0_1_viv' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1862' bound to instance 'i_xbip_counter' of component 'xbip_counter_v3_0_1_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2103]
+INFO: [Synth 8-638] synthesizing module 'xbip_counter_v3_0_1_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1897]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-3491] module 'fabric_counter' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1483' bound to instance 'i_fab' of component 'fabric_counter' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:2015]
+INFO: [Synth 8-638] synthesizing module 'fabric_counter' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1507]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_1_viv' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:284' bound to instance 'i_sum_reg' of component 'xbip_pipe_v3_0_1_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1730]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_1_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_1_viv' (14#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_1_viv' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:284' bound to instance 'i_sum_pipe' of component 'xbip_pipe_v3_0_1_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1750]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_1_viv__parameterized1' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_1_viv__parameterized1' (14#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+INFO: [Synth 8-256] done synthesizing module 'fabric_counter' (15#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1507]
+INFO: [Synth 8-256] done synthesizing module 'xbip_counter_v3_0_1_viv' (16#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_counter_v3_0/hdl/xbip_counter_v3_0_vh_rfs.vhd:1897]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_8_viv' (17#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1920]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_8' (18#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'design_1_c_counter_binary_0_0' (19#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_counter_binary_1_0' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_1_0/synth/design_1_c_counter_binary_1_0.vhd:66]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_8' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:116' bound to instance 'U0' of component 'c_counter_binary_v12_0_8' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_1_0/synth/design_1_c_counter_binary_1_0.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_8__parameterized1' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:157]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_8_viv' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1866' bound to instance 'i_synth' of component 'c_counter_binary_v12_0_8_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_8_viv__parameterized1' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1920]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_8_legacy' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:333' bound to instance 'i_baseblox_counter' of component 'c_counter_binary_v12_0_8_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2046]
+INFO: [Synth 8-638] synthesizing module 'c_counter_binary_v12_0_8_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:390]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:524]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:528]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:532]
+INFO: [Common 17-14] Message 'Synth 8-312' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1109]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized1' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized1' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized1' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized1' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized1' (19#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized1' (19#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized1' (19#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized1' (19#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_addsub_v12_0/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_8_legacy' (20#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:390]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_8_viv__parameterized1' (20#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:1920]
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_v12_0_8__parameterized1' (20#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_counter_binary_v12_0/hdl/c_counter_binary_v12_0.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'design_1_c_counter_binary_1_0' (21#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_1_0/synth/design_1_c_counter_binary_1_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_shift_ram_0_0' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_0/synth/design_1_c_shift_ram_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_8' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:119' bound to instance 'U0' of component 'c_shift_ram_v12_0_8' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_0/synth/design_1_c_shift_ram_0_0.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'c_shift_ram_v12_0_8' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:158]
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_8_viv' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2495' bound to instance 'i_synth' of component 'c_shift_ram_v12_0_8_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'c_shift_ram_v12_0_8_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2545]
+INFO: [Synth 8-638] synthesizing module 'c_shift_ram_v12_0_8_legacy' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:1549]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'output_regs' of component 'c_reg_fd_v12_0_1_viv' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:1966]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized3' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized3' (21#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_reg_fd_v12_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_shift_ram_v12_0_8_legacy' (22#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:1549]
+INFO: [Synth 8-256] done synthesizing module 'c_shift_ram_v12_0_8_viv' (23#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2545]
+INFO: [Synth 8-256] done synthesizing module 'c_shift_ram_v12_0_8' (24#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'design_1_c_shift_ram_0_0' (25#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_0_0/synth/design_1_c_shift_ram_0_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_shift_ram_1_0' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_1_0/synth/design_1_c_shift_ram_1_0.vhd:67]
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_8' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:119' bound to instance 'U0' of component 'c_shift_ram_v12_0_8' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_1_0/synth/design_1_c_shift_ram_1_0.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'design_1_c_shift_ram_1_0' (26#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_1_0/synth/design_1_c_shift_ram_1_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_shift_ram_2_0' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_2_0/synth/design_1_c_shift_ram_2_0.vhd:67]
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_8' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:119' bound to instance 'U0' of component 'c_shift_ram_v12_0_8' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_2_0/synth/design_1_c_shift_ram_2_0.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'design_1_c_shift_ram_2_0' (27#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_2_0/synth/design_1_c_shift_ram_2_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_shift_ram_3_0' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_3_0/synth/design_1_c_shift_ram_3_0.vhd:67]
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_8' declared at 'c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/c_shift_ram_v12_0/hdl/c_shift_ram_v12_0.vhd:119' bound to instance 'U0' of component 'c_shift_ram_v12_0_8' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_3_0/synth/design_1_c_shift_ram_3_0.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'design_1_c_shift_ram_3_0' (28#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_3_0/synth/design_1_c_shift_ram_3_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:69]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:67]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Software/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14145]
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (29#1) [C:/Software/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:14145]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Software/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (30#1) [C:/Software/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Software/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (31#1) [C:/Software/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (32#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:67]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0' (33#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:69]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconcat_0_0' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (34#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconcat_0_0' (35#1) [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (36#1) [C:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (37#1) [C:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 344.414 ; gain = 173.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 344.414 ; gain = 173.461
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/constrs_1/imports/3700/Basys3_Master-1.xdc]
+Finished Parsing XDC File [C:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/constrs_1/imports/3700/Basys3_Master-1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/constrs_1/imports/3700/Basys3_Master-1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/labuser/Desktop/ECE3700/project_2/project_2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/labuser/Desktop/ECE3700/project_2/project_2.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/labuser/Desktop/ECE3700/project_2/project_2.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 618.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 618.453 ; gain = 447.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 618.453 ; gain = 447.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0/inst. (constraint file  C:/Users/labuser/Desktop/ECE3700/project_2/project_2.runs/synth_1/dont_touch.xdc, line 40).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/SevenSegmentDriver_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/c_addsub_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/c_counter_binary_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/c_counter_binary_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/c_shift_ram_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/c_shift_ram_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/c_shift_ram_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/c_shift_ram_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 618.453 ; gain = 447.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "dp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "refClk" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'dp_reg' [c:/Users/labuser/Desktop/ECE3700/project_2/project_2.srcs/sources_1/bd/design_1/ipshared/usu.edu/sevensegmentdriver_v1_0/ThePlexer.v:65]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 618.453 ; gain = 447.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 618.453 ; gain = 447.500
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 618.453 ; gain = 447.500
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 618.453 ; gain = 447.500
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 618.453 ; gain = 447.500
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 618.453 ; gain = 447.500
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 618.453 ; gain = 447.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 618.453 ; gain = 447.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 626.418 ; gain = 455.465
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 626.418 ; gain = 455.465
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 626.418 ; gain = 455.465
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin \i_q.i_simple.qreg :AINIT to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_q.i_simple.qreg :ACLR to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_q.i_simple.qreg :ASET to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :add to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :c_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :ce to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :bypass to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :aclr to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :aset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :ainit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :sset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :sinit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :add to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :ce to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :bypass to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :aclr to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :aset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :ainit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :sset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :sinit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_addsub :add to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_addsub :ce to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_addsub :bypass to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_addsub :sset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_addsub :sinit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_seg[1].i_sum_reg :CE to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_seg[1].i_sum_reg :SCLR to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_seg[1].i_sum_reg :D[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_fabric.i_fab :CE to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_fabric.i_fab :UP to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_fabric.i_fab :N_LOAD to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_fabric.i_fab :L[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseip.i_xbip_counter :CE to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseip.i_xbip_counter :SCLR to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseip.i_xbip_counter :UP to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseip.i_xbip_counter :LOAD to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseip.i_xbip_counter :L[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_q.i_simple.qreg :AINIT to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_q.i_simple.qreg :ACLR to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_q.i_simple.qreg :ASET to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :a[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :a[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :b[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :b[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :add to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :c_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :ce to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :bypass to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :aclr to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :aset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :ainit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :sclr to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :sset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_lut6.i_lut6_addsub :sinit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :a[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :a[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :b[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :b[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :add to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :ce to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :bypass to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :aclr to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :aset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :ainit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :sclr to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :sset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \no_pipelining.the_addsub :sinit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin the_addsub:a[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin the_addsub:a[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin the_addsub:aclr to constant 0
+WARNING: [Synth 8-3295] tying undriven pin the_addsub:aset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin the_addsub:ainit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_counter :up to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_counter :ce to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_counter :load to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_counter :l[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_counter :l[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_counter :sclr to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_counter :sset to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \i_baseblox.i_baseblox_counter :sinit to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :CE to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :AINIT to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :ACLR to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :ASET to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :SINIT to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :SCLR to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :SSET to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :CE to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :AINIT to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :ACLR to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :ASET to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :SINIT to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :SCLR to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :SSET to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :CE to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :AINIT to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :ACLR to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :ASET to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :SINIT to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \gen_output_regs.output_regs :SCLR to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.418 ; gain = 455.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.418 ; gain = 455.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.418 ; gain = 455.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |     6|
+|3     |LUT1       |    34|
+|4     |LUT2       |    21|
+|5     |LUT3       |    28|
+|6     |LUT4       |    44|
+|7     |LUT5       |    23|
+|8     |LUT6       |    57|
+|9     |MMCME2_ADV |     1|
+|10    |MUXCY      |    16|
+|11    |XORCY      |    18|
+|12    |FDRE       |    51|
+|13    |LD         |     1|
+|14    |IBUF       |    21|
+|15    |OBUF       |    15|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.418 ; gain = 455.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 109 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 626.418 ; gain = 112.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.418 ; gain = 455.465
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 5 instances
+  LD => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+177 Infos, 205 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 626.418 ; gain = 411.160
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 626.418 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 09 17:45:08 2018...

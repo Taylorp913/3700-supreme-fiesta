@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Jan 20 14:24:18 2018
+# Process ID: 4188
+# Current directory: C:/Users/labuser/Desktop/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log ublaze_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source ublaze_wrapper.tcl
+# Log file: C:/Users/labuser/Desktop/project_1/project_1.runs/synth_1/ublaze_wrapper.vds
+# Journal file: C:/Users/labuser/Desktop/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ublaze_wrapper.tcl -notrace
