@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Apr  4 16:36:38 2018
+| Host         : taylor-XPS-15-9530 running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_AXI_SevenSegmentDriver_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_AXI_SevenSegmentDriver_0_0 from usu.edu:user:AXI_SevenSegmentDriver:1.0 (Rev. 5) to usu.edu:user:AXI_SevenSegmentDriver:2.0 (Rev. 1)
+

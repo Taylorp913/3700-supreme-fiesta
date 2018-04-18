@@ -80,3 +80,10 @@
 21:29:11 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
 21:29:12 INFO  : XSDB server has started successfully.
 21:29:13 INFO  : Processing command line option -hwspec /home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_2/lab_2.sdk/design_1_wrapper.hdf.
+15:44:43 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:44:44 INFO  : XSDB server has started successfully.
+15:44:45 INFO  : Processing command line option -hwspec /home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_2/lab_2.sdk/design_1_wrapper.hdf.
+15:44:47 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_2.
+15:45:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:45:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+15:45:01 INFO  : FPGA configured successfully with bitstream "/home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_2/lab_2.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"

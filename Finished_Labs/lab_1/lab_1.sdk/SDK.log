@@ -700,3 +700,66 @@ con
 ----------------End of Script----------------
 
 21:25:38 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:26:39 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:26:40 INFO  : XSDB server has started successfully.
+15:26:41 INFO  : Processing command line option -hwspec /home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_1/lab_1.sdk/ublaze_wrapper.hdf.
+15:26:41 INFO  : Checking for hwspec changes in the project ublaze_wrapper_hw_platform_4.
+15:29:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+15:29:33 INFO  : FPGA configured successfully with bitstream "/home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_1/lab_1.sdk/ublaze_wrapper_hw_platform_0/download.bit"
+15:29:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+15:29:58 INFO  : 'fpga -state' command is executed.
+15:29:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:58 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:59 INFO  : Hardware design information is loaded from '/home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_1/lab_1.sdk/ublaze_wrapper_hw_platform_0/system.hdf'.
+15:29:59 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:59 INFO  : System reset is completed.
+15:30:02 INFO  : Context for processor 'microblaze_0' is selected.
+15:30:03 INFO  : The application '/home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_1/lab_1.sdk/ublaze_test/Debug/ublaze_test.elf' is downloaded to processor 'microblaze_0'.
+15:30:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw /home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_1/lab_1.sdk/ublaze_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow /home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_1/lab_1.sdk/ublaze_test/Debug/ublaze_test.elf
+----------------End of Script----------------
+
+15:30:03 INFO  : Memory regions updated for context MicroBlaze #0
+15:30:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:30:03 INFO  : 'con' command is executed.
+15:30:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+con
+----------------End of Script----------------
+
+15:42:17 INFO  : Disconnected from the channel tcfchan#1.
+15:42:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+15:42:17 INFO  : 'fpga -state' command is executed.
+15:42:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:42:18 INFO  : Context for processor 'microblaze_0' is selected.
+15:42:18 INFO  : Hardware design information is loaded from '/home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_1/lab_1.sdk/ublaze_wrapper_hw_platform_0/system.hdf'.
+15:42:18 INFO  : Context for processor 'microblaze_0' is selected.
+15:42:18 INFO  : System reset is completed.
+15:42:22 INFO  : Context for processor 'microblaze_0' is selected.
+15:42:22 INFO  : The application '/home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_1/lab_1.sdk/ublaze_test/Debug/ublaze_test.elf' is downloaded to processor 'microblaze_0'.
+15:42:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw /home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_1/lab_1.sdk/ublaze_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow /home/taylor/ECE_3700/3700-supreme-fiesta/Finished_Labs/lab_1/lab_1.sdk/ublaze_test/Debug/ublaze_test.elf
+----------------End of Script----------------
+
+15:42:22 INFO  : Memory regions updated for context MicroBlaze #0
+15:42:22 INFO  : Context for processor 'microblaze_0' is selected.
+15:42:22 INFO  : 'con' command is executed.
+15:42:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+con
+----------------End of Script----------------
+
+15:43:37 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl

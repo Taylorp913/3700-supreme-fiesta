@@ -660,3 +660,12 @@ make: Nothing to be done for 'all'.
 21:23:44 **** Incremental Build of configuration Debug for project ublaze_test ****
 make all 
 make: Nothing to be done for 'all'.
+15:26:37 **** Auto Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.
+15:29:55 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.
+15:42:04 **** Incremental Build of configuration Debug for project ublaze_test ****
+make all 
+make: Nothing to be done for 'all'.
