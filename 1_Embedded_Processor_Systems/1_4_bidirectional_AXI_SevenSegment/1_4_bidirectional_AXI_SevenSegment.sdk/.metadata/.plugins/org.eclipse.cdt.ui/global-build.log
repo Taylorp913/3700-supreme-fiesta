@@ -721,3 +721,92 @@ make: Nothing to be done for 'all'.
 14:06:53 **** Incremental Build of configuration Debug for project lab3 ****
 make all 
 make: Nothing to be done for 'all'.
+10:54:23 **** Incremental Build of configuration Debug for project lab3 ****
+make all 
+make: Nothing to be done for 'all'.
+10:56:57 **** Clean-only build of configuration Debug for project lab4 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  lab4.elf.size  lab4.elf
+ 
+10:56:57 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../lab4_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:3: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+   MB_Sleep(600);
+   ^
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../lab4_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: lab4.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: lab4.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6705	    292	   3131	  10128	   2790	lab4.elf
+Finished building: lab4.elf.size
+ 
+10:57:57 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+10:58:13 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+11:14:31 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../lab4_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:71:46: error: 'enable' undeclared (first use in this function)
+   Xil_Out32(SEVENSEGMENTDRIVER_BASEADDR+0xC, enable);
+                                              ^
+../src/helloworld.c:71:46: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:84:3: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+   MB_Sleep(600);
+   ^
+src/subdir.mk:24: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:15:43 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../lab4_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:85:3: warning: implicit declaration of function 'MB_Sleep' [-Wimplicit-function-declaration]
+   MB_Sleep(600);
+   ^
+Finished building: ../src/helloworld.c
+ 
+Building target: lab4.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab4_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "lab4.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: lab4.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6893	    292	   3124	  10309	   2845	lab4.elf
+Finished building: lab4.elf.size
+ 
+11:15:55 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+11:18:12 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+12:55:45 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:55:46 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for 'all'.

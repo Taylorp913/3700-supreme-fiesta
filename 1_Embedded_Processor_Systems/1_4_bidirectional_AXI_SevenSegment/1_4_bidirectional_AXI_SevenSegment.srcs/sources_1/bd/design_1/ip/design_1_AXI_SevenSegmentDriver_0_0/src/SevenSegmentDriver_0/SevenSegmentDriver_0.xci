@@ -7,11 +7,11 @@
   <spirit:componentInstances>
     <spirit:componentInstance>
       <spirit:instanceName>SevenSegmentDriver_0</spirit:instanceName>
-      <spirit:componentRef spirit:vendor="usu.edu" spirit:library="ECE3700" spirit:name="SevenSegmentDriver" spirit:version="2.0"/>
+      <spirit:componentRef spirit:vendor="usu.edu" spirit:library="ECE3700" spirit:name="SevenSegmentDriver" spirit:version="3.0"/>
       <spirit:configurableElementValues>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Component_Name">SevenSegmentDriver_0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.ARCHITECTURE">artix7</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.BOARD">digilentinc.com:basys3:part0:1.1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.BOARD"/>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.DEVICE">xc7a35t</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.PACKAGE">cpg236</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.PREFHDL">VERILOG</spirit:configurableElementValue>

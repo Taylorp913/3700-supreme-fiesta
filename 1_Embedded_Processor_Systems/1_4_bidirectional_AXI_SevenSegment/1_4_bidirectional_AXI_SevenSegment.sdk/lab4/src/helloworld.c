@@ -58,6 +58,7 @@ void print(char *str);
 int main ()
 {
 	init_platform();
+	u32 enable = 0;
 	u32 dec = 0;
 	u32 bcd = 1;
 	u32 value = 0;
@@ -68,17 +69,23 @@ int main ()
 		Xil_Out32(SEVENSEGMENTDRIVER_BASEADDR, value);
 		Xil_Out32(SEVENSEGMENTDRIVER_BASEADDR+0x4, bcd);
 		Xil_Out32(SEVENSEGMENTDRIVER_BASEADDR+0x8, dec);
+		Xil_Out32(SEVENSEGMENTDRIVER_BASEADDR+0xC, enable);
 		// ADD THESE LINES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 		// Read data from the four AXI registers :
 		ones = 		Xil_In32(SEVENSEGMENTDRIVER_BASEADDR);
-		tens = 		Xil_In32(SEVENSEGMENTDRIVER_BASEADDR+0x4 );
-		hundreds = 	Xil_In32(SEVENSEGMENTDRIVER_BASEADDR+0x8 );
+		tens = 		Xil_In32(SEVENSEGMENTDRIVER_BASEADDR+0x4);
+		hundreds = 	Xil_In32(SEVENSEGMENTDRIVER_BASEADDR+0x8);
 		thousands = Xil_In32(SEVENSEGMENTDRIVER_BASEADDR+0xC);
+
 		xil_printf("Digits are: %d_%d_%d_%d\n", thousands , hundreds , tens , ones );
+
 		// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 		value = value + 1;
+		enable = !enable & 0x1;
 		MB_Sleep(600);
+
 	}
+
 	cleanup_platform();
 	return 0;
 }

@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: usu.edu:user:AXI_SevenSegmentDriver:2.0
--- IP Revision: 1
+-- IP Revision: 4
 
 -- The following code must appear in the VHDL architecture header.
 

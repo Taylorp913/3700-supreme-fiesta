@@ -17,6 +17,7 @@ module ThePlexer(
 	input [6:0] disp1000,
 	input [1:0] dec,
 	input clk,
+	input       enable,
 	output reg [6:0] disp,
 	output reg [3:0] anode,
 	output reg dp
@@ -49,6 +50,7 @@ module ThePlexer(
 	//		This assigns the place value data and the anode control
 	//		to its correct display digit.
 	always @(*) begin //* run when any input changes
+		if (enable) begin
 		case (sel)
 			2'b00 : begin //thousands
                 // This if statement makes the value 0 not display
@@ -124,5 +126,8 @@ module ThePlexer(
 				anode = 4'b0111; //0111
 				end
 		endcase
+	end else begin
+		anode = 4'HF;
+	end
 	end
 endmodule

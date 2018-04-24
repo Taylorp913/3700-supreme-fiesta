@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr 18 16:06:55 2018
+# Process ID: 3156
+# Current directory: /home/taylor/ECE_3700/3700-supreme-fiesta/2_1_PWM_test/2_1_PWM_test.runs/synth_1
+# Command line: vivado -log dim_leds.vds -mode batch -messageDb vivado.pb -notrace -source dim_leds.tcl
+# Log file: /home/taylor/ECE_3700/3700-supreme-fiesta/2_1_PWM_test/2_1_PWM_test.runs/synth_1/dim_leds.vds
+# Journal file: /home/taylor/ECE_3700/3700-supreme-fiesta/2_1_PWM_test/2_1_PWM_test.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source dim_leds.tcl -notrace

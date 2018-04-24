@@ -48,7 +48,7 @@
 
 
 // IP VLNV: usu.edu:user:AXI_SevenSegmentDriver:2.0
-// IP Revision: 1
+// IP Revision: 4
 
 `timescale 1ns/1ps
 

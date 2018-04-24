@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: usu.edu:ECE3700:SevenSegmentDriver:2.0
+// IP VLNV: usu.edu:ECE3700:SevenSegmentDriver:3.0
 // IP Revision: 1
 
 `timescale 1ns/1ps
@@ -58,6 +58,7 @@ module SevenSegmentDriver_0 (
   din,
   bcd,
   dec,
+  enable,
   an,
   seg,
   dp,
@@ -72,6 +73,7 @@ input wire clk;
 input wire [15 : 0] din;
 input wire bcd;
 input wire [1 : 0] dec;
+input wire enable;
 output wire [3 : 0] an;
 output wire [6 : 0] seg;
 output wire dp;
@@ -85,6 +87,7 @@ output wire [3 : 0] thousands;
     .din(din),
     .bcd(bcd),
     .dec(dec),
+    .enable(enable),
     .an(an),
     .seg(seg),
     .dp(dp),

@@ -1,0 +1,62 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Apr 23 15:31:50 2018
+| Host         : taylor-XPS-15-9530 running 64-bit Ubuntu 16.04.4 LTS
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     9 |
+| Minimum Number of register sites lost to control set restrictions |    25 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              42 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              19 |            5 |
+| Yes          | No                    | No                     |              75 |           17 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              15 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                                   Clock Signal                                  |                                  Enable Signal                                 |                                                                                     Set/Reset Signal                                                                                    | Slice Load Count | Bel Load Count |
++---------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  design_1_i/clk_wiz_0/inst/clk_out2                                             |                                                                                |                                                                                                                                                                                         |                3 |              3 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                                             |                                                                                | design_1_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output[4]_i_1_n_0 |                1 |              4 |
+|  design_1_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0 |                                                                                |                                                                                                                                                                                         |                4 |              4 |
+|  design_1_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0 |                                                                                | design_1_i/wavetable_0/inst/count[0]_i_1_n_0                                                                                                                                            |                4 |             15 |
+|  design_1_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0 | design_1_i/wavetable_0/inst/next_addr                                          |                                                                                                                                                                                         |                4 |             15 |
+|  design_1_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0 | design_1_i/wavetable_0/inst/addr_reg[14]_i_1_n_0                               | design_1_i/c_shift_ram_3/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/q[0]                                                                                                          |                5 |             15 |
+|  design_1_i/clk_wiz_0/inst/clk_out1                                             |                                                                                |                                                                                                                                                                                         |               12 |             35 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                                             | design_1_i/util_vector_logic_0/Res[0]                                          |                                                                                                                                                                                         |                9 |             45 |
+|  design_1_i/clk_wiz_0/inst/clk_out2                                             | design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/q[0] |                                                                                                                                                                                         |                8 |             45 |
++---------------------------------------------------------------------------------+--------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

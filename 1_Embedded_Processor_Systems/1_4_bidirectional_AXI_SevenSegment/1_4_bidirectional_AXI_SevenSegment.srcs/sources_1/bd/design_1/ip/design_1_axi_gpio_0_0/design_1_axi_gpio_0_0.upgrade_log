@@ -1,0 +1,62 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Apr 18 12:50:27 2018
+| Host         : taylor-XPS-15-9530 running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of design_1_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 9)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+WARNING: The normal upgrade process failed due to validation failures in the given configuration . Attempting partial upgrade.
+This process will attempt to set as many user parameters as possible.Please check the parameters whose values were not applied
+
+WARNING: Unable to set the value 'led_16bits' on parameter 'GPIO BOARD INTERFACE' due to the following failure - 
+Value 'led_16bits' is out of the range for parameter 'GPIO BOARD INTERFACE(GPIO_BOARD_INTERFACE)' for BD Cell '/axi_gpio_0' . Valid values are - Custom
+.Restoring to an old valid value of 'Custom'
+
+WARNING: Unable to set the value 'dip_switches_16bits' on parameter 'GPIO2 BOARD INTERFACE' due to the following failure - 
+Value 'dip_switches_16bits' is out of the range for parameter 'GPIO2 BOARD INTERFACE(GPIO2_BOARD_INTERFACE)' for BD Cell '/axi_gpio_0' . Valid values are - Custom
+.Restoring to an old valid value of 'Custom'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_gpio:2.0 -user_name design_1_axi_gpio_0_0
+set_property -dict "\
+  CONFIG.C_ALL_INPUTS 0 \
+  CONFIG.C_ALL_INPUTS_2 1 \
+  CONFIG.C_ALL_OUTPUTS 0 \
+  CONFIG.C_ALL_OUTPUTS_2 0 \
+  CONFIG.C_DOUT_DEFAULT 0x00000000 \
+  CONFIG.C_DOUT_DEFAULT_2 0x00000000 \
+  CONFIG.C_GPIO2_WIDTH 16 \
+  CONFIG.C_GPIO_WIDTH 16 \
+  CONFIG.C_INTERRUPT_PRESENT 0 \
+  CONFIG.C_IS_DUAL 1 \
+  CONFIG.C_TRI_DEFAULT 0xFFFFFFFF \
+  CONFIG.C_TRI_DEFAULT_2 0xFFFFFFFF \
+  CONFIG.Component_Name design_1_axi_gpio_0_0 \
+  CONFIG.GPIO2_BOARD_INTERFACE dip_switches_16bits \
+  CONFIG.GPIO_BOARD_INTERFACE led_16bits \
+  CONFIG.USE_BOARD_FLOW true " [get_ips design_1_axi_gpio_0_0]
+
+

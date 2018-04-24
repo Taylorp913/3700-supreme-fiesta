@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1523991602">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1524079227">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="design_1_wrapper.vdi"/>
   <File Type="BG-DRC" Name="design_1_wrapper.drc"/>
@@ -75,6 +75,10 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_AXI_SevenSegmentDriver_0_0/design_1_AXI_SevenSegmentDriver_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="design_1_wrapper"/>

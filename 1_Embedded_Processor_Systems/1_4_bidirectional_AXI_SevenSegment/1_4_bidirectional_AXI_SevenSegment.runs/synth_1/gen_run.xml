@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1523991602">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1524079227">
   <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
@@ -32,6 +32,10 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_AXI_SevenSegmentDriver_0_0/design_1_AXI_SevenSegmentDriver_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="design_1_wrapper"/>
@@ -55,9 +59,9 @@
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Flow_RuntimeOptimized" Flow="Vivado Synthesis 2015"/>
     <Step Id="synth_design">
+      <Option Id="FsmExtraction">0</Option>
       <Option Id="FlattenHierarchy">1</Option>
       <Option Id="Directive">0</Option>
-      <Option Id="FsmExtraction">0</Option>
     </Step>
   </Strategy>
 </GenRun>

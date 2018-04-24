@@ -2,6 +2,10 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.mb.exe.debug.2102908525;xilinx.gnu.mb.exe.debug.2102908525.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/opt/Xilinx2/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include"/>
+<includePath path="/opt/Xilinx2/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include-fixed"/>
+<includePath path="/opt/Xilinx2/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/include"/>
+<includePath path="/opt/Xilinx2/SDK/2015.4/gnu/microblaze/lin/bin/../microblaze-xilinx-elf/sysroot/usr/include"/>
 <includePath path="/opt/Xilinx/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include"/>
 <includePath path="/opt/Xilinx/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include-fixed"/>
 <includePath path="/opt/Xilinx/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/include"/>
@@ -442,6 +446,10 @@
 </instance>
 <instance id="xilinx.gnu.mb.exe.debug.2102908525;xilinx.gnu.mb.exe.debug.2102908525.;xilinx.gnu.mb.c.toolchain.compiler.debug.1394910982;xilinx.gnu.compiler.input.1117790378">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/opt/Xilinx2/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include"/>
+<includePath path="/opt/Xilinx2/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include-fixed"/>
+<includePath path="/opt/Xilinx2/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/include"/>
+<includePath path="/opt/Xilinx2/SDK/2015.4/gnu/microblaze/lin/bin/../microblaze-xilinx-elf/sysroot/usr/include"/>
 <includePath path="/opt/Xilinx/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include"/>
 <includePath path="/opt/Xilinx/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/include-fixed"/>
 <includePath path="/opt/Xilinx/SDK/2015.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/include"/>

@@ -52,7 +52,7 @@
 # #########################################################
 
 
-create_clock -period 20 -name LMB_Clk [get_ports LMB_Clk]
+create_clock -period 10 -name LMB_Clk [get_ports LMB_Clk]
 set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports LMB_Clk]
 
 

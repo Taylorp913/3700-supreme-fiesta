@@ -48,7 +48,7 @@
 
 
 // IP VLNV: usu.edu:user:AXI_SevenSegmentDriver:2.0
-// IP Revision: 1
+// IP Revision: 4
 
 (* X_CORE_INFO = "AXI_SevenSegmentDriver_v1_0,Vivado 2015.4" *)
 (* CHECK_LICENSE_TYPE = "design_1_AXI_SevenSegmentDriver_0_0,AXI_SevenSegmentDriver_v1_0,{}" *)

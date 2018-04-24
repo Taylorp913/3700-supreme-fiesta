@@ -18,6 +18,7 @@ module FullDisplay(
 		input [15:0] din,
 		input        bcd,
 		input  [1:0] dec,
+		input        enable,
 		output [3:0] an, 
 		output [6:0] seg,
 		output dp,

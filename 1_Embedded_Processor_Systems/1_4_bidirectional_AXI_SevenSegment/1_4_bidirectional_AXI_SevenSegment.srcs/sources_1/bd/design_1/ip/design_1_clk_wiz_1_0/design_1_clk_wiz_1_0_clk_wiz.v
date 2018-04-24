@@ -55,7 +55,7 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// CLK_OUT1____50.000______0.000______50.0______151.636_____98.575
+// CLK_OUT1___100.000______0.000______50.0______130.958_____98.575
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -68,7 +68,10 @@ module design_1_clk_wiz_1_0_clk_wiz
  (// Clock in ports
   input         clk_in1,
   // Clock out ports
-  output        clk_out1
+  output        clk_out1,
+  // Status and control signals
+  input         reset,
+  output        locked
  );
 
   // Input buffering
@@ -104,6 +107,7 @@ module design_1_clk_wiz_1_0_clk_wiz
   wire        clkout6_unused;
   wire        clkfbstopped_unused;
   wire        clkinstopped_unused;
+  wire        reset_high;
 
   MMCME2_ADV
   #(.BANDWIDTH            ("OPTIMIZED"),
@@ -114,7 +118,7 @@ module design_1_clk_wiz_1_0_clk_wiz
     .CLKFBOUT_MULT_F      (10.000),
     .CLKFBOUT_PHASE       (0.000),
     .CLKFBOUT_USE_FINE_PS ("FALSE"),
-    .CLKOUT0_DIVIDE_F     (20.000),
+    .CLKOUT0_DIVIDE_F     (10.000),
     .CLKOUT0_PHASE        (0.000),
     .CLKOUT0_DUTY_CYCLE   (0.500),
     .CLKOUT0_USE_FINE_PS  ("FALSE"),
@@ -159,9 +163,11 @@ module design_1_clk_wiz_1_0_clk_wiz
     .CLKINSTOPPED        (clkinstopped_unused),
     .CLKFBSTOPPED        (clkfbstopped_unused),
     .PWRDWN              (1'b0),
-    .RST                 (1'b0));
+    .RST                 (reset_high));
 
+  assign reset_high = reset; 
 
+  assign locked = locked_int;
 
   // Output buffering
   //-----------------------------------

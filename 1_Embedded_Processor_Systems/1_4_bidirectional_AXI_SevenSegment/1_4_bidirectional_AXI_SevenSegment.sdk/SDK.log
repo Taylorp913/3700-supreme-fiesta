@@ -395,3 +395,159 @@ con
 13:42:32 WARN  : Linker script will not be updated automatically. Users need to update it manually.
 14:22:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 14:32:29 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:52:49 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx2/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:52:50 INFO  : XSDB server has started successfully.
+10:52:50 INFO  : Processing command line option -hwspec /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper.hdf.
+10:52:50 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_4.
+10:53:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:53:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+10:53:42 INFO  : FPGA configured successfully with bitstream "/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/download.bit"
+10:54:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+10:54:25 INFO  : 'fpga -state' command is executed.
+10:54:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:54:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:54:26 INFO  : Hardware design information is loaded from '/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:54:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:54:26 INFO  : System reset is completed.
+10:54:30 INFO  : Context for processor 'microblaze_0' is selected.
+10:54:30 INFO  : The application '/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/lab3/Debug/lab3.elf' is downloaded to processor 'microblaze_0'.
+10:54:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -system
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/lab3/Debug/lab3.elf
+----------------End of Script----------------
+
+10:54:30 INFO  : Memory regions updated for context MicroBlaze #0
+10:54:30 INFO  : Context for processor 'microblaze_0' is selected.
+10:54:30 INFO  : 'con' command is executed.
+10:54:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+con
+----------------End of Script----------------
+
+10:57:04 INFO  : Disconnected from the channel tcfchan#1.
+10:57:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+10:57:05 INFO  : 'fpga -state' command is executed.
+10:57:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:57:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+10:57:49 INFO  : FPGA configured successfully with bitstream "/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_4/download.bit"
+10:57:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+10:57:59 INFO  : 'fpga -state' command is executed.
+10:57:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:57:59 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:59 INFO  : Hardware design information is loaded from '/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:57:59 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:00 INFO  : Processor reset is completed for 'microblaze_0'.
+10:58:00 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:00 INFO  : The application '/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'microblaze_0'.
+10:58:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/lab4/Debug/lab4.elf
+----------------End of Script----------------
+
+10:58:00 INFO  : Memory regions updated for context MicroBlaze #0
+10:58:00 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:00 INFO  : 'con' command is executed.
+10:58:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+con
+----------------End of Script----------------
+
+10:58:17 INFO  : Disconnected from the channel tcfchan#2.
+10:58:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+10:58:18 INFO  : 'fpga -state' command is executed.
+10:58:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:58:18 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:18 INFO  : Hardware design information is loaded from '/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:58:19 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:19 INFO  : Processor reset is completed for 'microblaze_0'.
+10:58:19 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:19 INFO  : The application '/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'microblaze_0'.
+10:58:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/lab4/Debug/lab4.elf
+----------------End of Script----------------
+
+10:58:19 INFO  : Memory regions updated for context MicroBlaze #0
+10:58:19 INFO  : Context for processor 'microblaze_0' is selected.
+10:58:19 INFO  : 'con' command is executed.
+10:58:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+con
+----------------End of Script----------------
+
+11:16:33 INFO  : Disconnected from the channel tcfchan#3.
+11:16:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+11:16:34 INFO  : 'fpga -state' command is executed.
+11:16:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:16:34 INFO  : Context for processor 'microblaze_0' is selected.
+11:16:34 INFO  : Hardware design information is loaded from '/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:16:35 INFO  : Context for processor 'microblaze_0' is selected.
+11:16:35 INFO  : Processor reset is completed for 'microblaze_0'.
+11:16:35 INFO  : Context for processor 'microblaze_0' is selected.
+11:16:35 INFO  : The application '/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'microblaze_0'.
+11:16:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/lab4/Debug/lab4.elf
+----------------End of Script----------------
+
+11:16:35 INFO  : Memory regions updated for context MicroBlaze #0
+11:16:35 INFO  : Context for processor 'microblaze_0' is selected.
+11:16:35 INFO  : 'con' command is executed.
+11:16:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+con
+----------------End of Script----------------
+
+11:18:16 INFO  : Disconnected from the channel tcfchan#4.
+11:18:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA" && level==0} -index 0' command is executed.
+11:18:17 INFO  : 'fpga -state' command is executed.
+11:18:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:18:17 INFO  : Context for processor 'microblaze_0' is selected.
+11:18:17 INFO  : Hardware design information is loaded from '/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:18:17 INFO  : Context for processor 'microblaze_0' is selected.
+11:18:18 INFO  : Processor reset is completed for 'microblaze_0'.
+11:18:18 INFO  : Context for processor 'microblaze_0' is selected.
+11:18:18 INFO  : The application '/home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/lab4/Debug/lab4.elf' is downloaded to processor 'microblaze_0'.
+11:18:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+loadhw /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+dow /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/lab4/Debug/lab4.elf
+----------------End of Script----------------
+
+11:18:18 INFO  : Memory regions updated for context MicroBlaze #0
+11:18:18 INFO  : Context for processor 'microblaze_0' is selected.
+11:18:18 INFO  : 'con' command is executed.
+11:18:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DEDFA"} -index 0
+con
+----------------End of Script----------------
+
+12:35:47 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx2/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+12:55:47 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx2/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+12:55:48 INFO  : XSDB server has started successfully.
+12:55:48 INFO  : Processing command line option -hwspec /home/taylor/ECE_3700/3700-supreme-fiesta/1_Embedded_Processor_Systems/1_4_bidirectional_AXI_SevenSegment/1_4_bidirectional_AXI_SevenSegment.sdk/design_1_wrapper.hdf.
+12:55:49 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_4.
